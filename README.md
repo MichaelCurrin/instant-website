@@ -3,6 +3,7 @@
 
 A usecase for this is creating a website for a fictional business when brainstorming crazy ideas with friends or colleagues.
 
+
 **(work in progress)**
 
 
@@ -21,7 +22,7 @@ Additional ideas:
 ## How to use it
 
 1. Choose your fields (title, background image, etc.) using a form tool.
-2. You will a URL with your custom values in the query parameters - `?foo=bar&fizz=buzz`
+2. You will get a URL with your custom values in the query parameters.
 3. Use the URL to view a dynamic webage which adapts to your values and changes the text and images to match it.
 4. Share the URL with others.
 
@@ -32,6 +33,23 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 
 ## Resources
+
+### What is a query string and URL parameters?
+
+Exampel of URL paramters:
+
+-`?foo=bar&fizz=buzz`
+
+URL parameters follow a structure like this:
+
+- Start with question mark.
+- Use an equals sign to separate a key and value.
+- Use an ampersand to separate pairs.
+- Values should be percent-encoded. e.g. a space becomes `%20`.
+
+- [Query string](https://en.wikipedia.org/wiki/Query_string) on Wikipedia.
+
+### Javascript
 
 On handling parameters with JavaScript
 
