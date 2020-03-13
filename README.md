@@ -1,5 +1,5 @@
 # Instant website
-> Create a website with custom text and images using parameters in the URL
+> Create a webpage with custom text and images instantly - just change the URL query parameters.
 
 I was frustrated at the time it takes to create a new website on a whim, resorting to creating a site from a template or existing site and changing the content or Jekyll config. Then I realized that a single website can look however you wish it to using JavaScript to make it dynamic. Supply your parameters in the URL and the app will use the content to build a webpage in your browser.
 
