@@ -1,8 +1,7 @@
 # Instant website
-> Create a webpage with custom text and images instantly - just change the URL query parameters.
+> Manifest a business idea as a simple webpage - using custom text and images supplieds in a URL and no coding.
 
-A usecase for this is creating a website for a fictional business when brainstorming crazy ideas with friends or colleagues.
-
+Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
 **(work in progress)**
 
@@ -17,6 +16,7 @@ Additional ideas:
 - Include an example URL.
 - Include a showcase page with URLs sent in my people or that I created.
 - Fallback for now parameters (maybe a tutorial or link to tutorial).
+- Add additional customization like colors and fonts or themes. For example, Docsify has multiple CSS theme files to switch between to change the look and feel.
 
 ## How to use it
 
