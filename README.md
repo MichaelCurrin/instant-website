@@ -7,7 +7,6 @@ A usecase for this is creating a website for a fictional business when brainstor
 **(work in progress)**
 
 
-
 ## Features 
 
 - Choose text and images. These parameters get turn into a URL.
@@ -38,7 +37,7 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 Exampel of URL paramters:
 
--`?foo=bar&fizz=buzz`
+- `?foo=bar&fizz=buzz`
 
 URL parameters follow a structure like this:
 
