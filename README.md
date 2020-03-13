@@ -33,9 +33,11 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 ## Resources
 
-### What is a query string and URL parameters?
+## What are URL parameters?
 
-Exampel of URL paramters:
+URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form. 
+
+Example of URL parameters:
 
 - `?foo=bar&fizz=buzz`
 
@@ -46,7 +48,11 @@ URL parameters follow a structure like this:
 - Use an ampersand to separate pairs.
 - Values should be percent-encoded. e.g. a space becomes `%20`.
 
+Links
+
 - [Query string](https://en.wikipedia.org/wiki/Query_string) on Wikipedia.
+
+Note that you should **never** send sensitive data (e.g. credit card details) through a URL parameters as an end user or developer. As the parameters are not secure. Rather use POST request with data sent on the payload or use a third-party integration such as for payment details.
 
 ### Javascript
 
