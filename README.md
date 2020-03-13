@@ -35,7 +35,7 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 ## What are URL parameters?
 
-URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form. 
+URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form or doing a search. 
 
 Example of URL parameters:
 
