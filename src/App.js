@@ -11,7 +11,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h3>react-url-query example: basic</h3>
+                <h3>Instant website</h3>
                 <MainPage />
             </div>
         );
