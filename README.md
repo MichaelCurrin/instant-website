@@ -3,10 +3,10 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
+**🚧 work in progress**
 
 ## Features
 
-**🚧 work in progress**
 
 - [ ] Choose text and images. These parameters get turn into a URL.
 - [ ] View the URL - the dynamic webpage will change based on your custom settings.
@@ -36,6 +36,21 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 
 
+## Setup remotely
+
+1. Fork this project on Github.
+2. Sign into [Netlify](https://netlify.com) or create an account.
+3. Create project, using the Github repo.
+4. Wait for the site to deploy.
+5. View the deploy URL.
+
+
+## Local
+
+- [Installation](/docs/installation.md)
+- [Usage](/docs/usage.md)
+
+
 ## Resources
 
 ## What are URL parameters?
@@ -58,3 +73,7 @@ Links
 - [Query string](https://en.wikipedia.org/wiki/Query_string) on Wikipedia.
 
 Note that you should **never** send sensitive data (e.g. credit card details) through a URL parameters as an end user or developer. As the parameters are not secure. Rather use POST request with data sent on the payload or use a third-party integration such as for payment details.
+
+## Credits
+
+- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github. After I had the idea to use React to manage the state and push and pull URL params data, I soon found this project. I used that project's  [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo.
