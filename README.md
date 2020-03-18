@@ -1,15 +1,15 @@
 # Instant website
-> Manifest a business idea as a simple webpage - using custom text and images supplieds in a URL and no coding.
+> Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding.
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
 
-## Features 
+## Features
 
 **🚧 work in progress**
 
 - [ ] Choose text and images. These parameters get turn into a URL.
-- [ ] View the URL - the dynamic webpage will change based on your custom settigns.
+- [ ] View the URL - the dynamic webpage will change based on your custom settings.
 
 Additional ideas:
 
@@ -22,7 +22,7 @@ Additional ideas:
 
 1. Choose your fields (title, background image, etc.) using a form tool.
 2. You will get a URL with your custom values in the query parameters.
-3. Use the URL to view a dynamic webage which adapts to your values and changes the text and images to match it.
+3. Use the URL to view a dynamic webpage which adapts to your values and changes the text and images to match it.
 4. Share the URL with others.
 
 
@@ -32,15 +32,15 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 ### Inspiration for design
 
-- https://whoopi-goldbot.netlify.com/
-- https://michaelcurrin.github.io/landing-page-boilerplate/
+- [whoopi-goldbot.netlify.com/](https://whoopi-goldbot.netlify.com/)
+- [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 
 
 ## Resources
 
 ## What are URL parameters?
 
-URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form or doing a search. 
+URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form or doing a search.
 
 Example of URL parameters:
 
@@ -58,10 +58,3 @@ Links
 - [Query string](https://en.wikipedia.org/wiki/Query_string) on Wikipedia.
 
 Note that you should **never** send sensitive data (e.g. credit card details) through a URL parameters as an end user or developer. As the parameters are not secure. Rather use POST request with data sent on the payload or use a third-party integration such as for payment details.
-
-### Javascript
-
-On handling parameters with JavaScript
-
-- Example of getting URL parameters with JS https://www.sitepoint.com/get-url-parameters-with-javascript/
-- The `URLSearchParams` function docs: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
