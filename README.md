@@ -3,20 +3,17 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
-**🚧 work in progress**
 
 ## Features
 
 
-- [ ] Choose text and images. These parameters get turn into a URL.
-- [ ] View the URL - the dynamic webpage will change based on your custom settings.
+- A dynamic website based on your choices.
+- Start with a clean one-page landing page template.
+- Customize the content and styling
+    - Use a form. Custom values are pushed to the address bar.
+    - Or change values in the address bar and press enter.
+- While you can't save your page, you can share your URL so someone else can see what you see.
 
-Additional ideas:
-
-- [ ] Include an example URL.
-- [ ] Include a showcase page with URLs sent in my people or that I created.
-- [ ] Fallback for now parameters (maybe a tutorial or link to tutorial).
-- [ ] Add additional customization like colors and fonts or themes. For example, Docsify has multiple CSS theme files to switch between to change the look and feel.
 
 ## How to use it
 
