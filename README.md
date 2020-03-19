@@ -37,7 +37,7 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 - [whoopi-goldbot.netlify.com/](https://whoopi-goldbot.netlify.com/)
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
-
+- [docsify](https://docsify.js.org/#/) cover page.
 
 ## Setup remotely
 
