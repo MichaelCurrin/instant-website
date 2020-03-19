@@ -14,14 +14,12 @@ Great for prototyping how a real or fictional business webpage could look like, 
 
 ## Features
 
-
 - A dynamic website based on your choices.
 - Start with a clean one-page landing page template.
 - Customize the content and styling
     - Use a form. Custom values are pushed to the address bar.
     - Or change values in the address bar and press enter.
 - While you can't save your page, you can share your URL so someone else can see what you see.
-
 
 ## How to use it
 
@@ -45,18 +43,18 @@ I was frustrated at the time it takes to create a new website on a whim, resorti
 
 Fork this project on Github.
 
-## Netlify
+### Netlify
 
 1. Sign into [Netlify](https://netlify.com) or create an account.
 1. Create project, using the Github repo.
 1. Wait for the site to deploy.
 1. View the deploy URL.
 
-## Github Pages
+### Github Pages
 
 This is not in the scope of this project, It is possible to serve a React project on Github pages. For example, see [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
 
-## Local
+## Local setup docs
 
 - [Installation](/docs/installation.md)
 - [Usage](/docs/usage.md)
@@ -64,7 +62,7 @@ This is not in the scope of this project, It is possible to serve a React projec
 
 ## Resources
 
-## What are URL parameters?
+### What are URL parameters?
 
 URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form or doing a search.
 
