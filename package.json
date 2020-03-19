@@ -1,5 +1,9 @@
 {
     "name": "instant-website",
+    "author": {
+        "name": "Michael Currin",
+        "url": "https://MichaelCurrin.github.io/"
+    },
     "version": "0.0.1",
     "devDependencies": {
         "react-scripts": "^0.6.1"
@@ -15,5 +19,6 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom"
-    }
+    },
+    "license": "MIT"
 }
