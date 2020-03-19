@@ -9,7 +9,7 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
-- [instant-website.netlify.com/](https://instant-website.netlify.com/)
+- Project website: [instant-website.netlify.com](https://instant-website.netlify.com/)
 
 
 ## Features
