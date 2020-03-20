@@ -9,10 +9,12 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
-- Project website: [instant-website.netlify.com](https://instant-website.netlify.com/)
+- Project site: [instant-website.netlify.com](https://instant-website.netlify.com/)
 
 
 ## Features
+
+### What can it do?
 
 - A dynamic website based on your choices.
 - Start with a clean one-page landing page template.
@@ -21,7 +23,7 @@ Great for prototyping how a real or fictional business webpage could look like, 
     - Or change values in the address bar and press enter.
 - While you can't save your page, you can share your URL so someone else can see what you see.
 
-## How to use it
+### How do I use it?
 
 1. Choose your fields (title, background image, etc.) using a form tool.
 2. You will get a URL with your custom values in the query parameters.
@@ -29,31 +31,27 @@ Great for prototyping how a real or fictional business webpage could look like, 
 4. Share the URL with others.
 
 
-## Background
+## Purpose and background
 
-I was frustrated at the time it takes to create a new website on a whim, resorting to creating a site from a template or existing site and changing the content or Jekyll config. Then I realized that a single website can look however you wish it to using JavaScript to make it dynamic. Supply your parameters in the URL and the app will use the content to build a webpage in your browser.
+I was frustrated at the time it takes to create a new website on a whim. I had a flow using a base HTML page or a Jekyll site which a config, but I wanted it to be faster.
+
+Then I realized that a single website can look however I wish it within seconds by using _JavaScript_ to make it dynamic.
+
+So I found a way to build a webpage in the browser, using a template page I created and some URL query parameters to configure it. For ease of use over editing the URL directly, I added a form input which generates the page and the URL. An easy do this is with React.
+
+The appearance of the site is kept simple - some text and some images, with a fixed layout.
 
 ### Inspiration for design
 
-- [whoopi-goldbot.netlify.com/](https://whoopi-goldbot.netlify.com/)
+- [whoopi-goldbot.netlify.com](https://whoopi-goldbot.netlify.com/)
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 - [docsify](https://docsify.js.org/#/) cover page.
 
 
-## Setup remotely
+## Remote setup
 
-Fork this project on Github.
+See [Remote](/docs/remote.md) doc.
 
-### Netlify
-
-1. Sign into [Netlify](https://netlify.com) or create an account.
-1. Create project, using the Github repo.
-1. Wait for the site to deploy.
-1. View the deploy URL.
-
-### Github Pages
-
-This is not in the scope of this project, It is possible to serve a React project on Github pages. For example, see [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
 
 ## Local setup
 
@@ -61,44 +59,23 @@ This is not in the scope of this project, It is possible to serve a React projec
 - [Usage](/docs/usage.md)
 - [Demo](/docs/demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
 
-## Resources
-
-
-### Bulma tutorials
-
-- [Image](https://bulma.io/documentation/elements/image/)
-- [Card](https://bulma.io/documentation/components/card/)
-
-### What are URL parameters?
-
-URL parameters are a way of sending data to a webpage using the URL - typically when sending data when responding to a form or doing a search.
-
-Example of URL parameters:
-
-- `?foo=bar&fizz=buzz`
-
-URL parameters follow a structure like this:
-
-- Start with question mark.
-- Use an equals sign to separate a key and value.
-- Use an ampersand to separate pairs.
-- Values should be percent-encoded. e.g. a space becomes `%20`.
-
-Links
-
-- [Query string](https://en.wikipedia.org/wiki/Query_string) on Wikipedia.
-
-Note that you should **never** send sensitive data (e.g. credit card details) through a URL parameters as an end user or developer. As the parameters are not secure. Rather use POST request with data sent on the payload or use a third-party integration such as for payment details.
-
-### Unsplash
-
-Load a specific image.
-
-```
-https://source.unsplash.com/IMAGE_ID/WIDTHxHEIGHT
-```
 
 ## Credits
 
+### Bulma card layout
+
+- [CodePen](https://codepen.io/egoens/pen/NbmEbR) of a centered card, made Bulma. This HTML and CSS (specified there SCSS) as was used as the basis for my project's layout.
+- Bulma tutorials
+    - [Image](https://bulma.io/documentation/elements/image/) element.
+    - [Card](https://bulma.io/documentation/components/card/) components.
+
+
+### React URL Query
+
 - [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github. After I had the idea to use React to manage the state and push and pull URL params data, I soon found this project. I used that project's  [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo.
-- [codepen](https://codepen.io/egoens/pen/NbmEbR) of a centered card, made Bulma. This HTML and CSS (specified there SCSS) as was used as the basis for my project's layout.
+
+### Images
+
+Stock image used for free from [unsplash.com](https://unsplash.com) and loaded through their [source.unsplash.com]((https://source.unsplash.com) domain.
+
+Read more [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/stock_images.md).
