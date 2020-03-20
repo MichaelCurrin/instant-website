@@ -9,18 +9,29 @@ import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
  */
 const urlPropsQueryConfig = {
     title: { type: UrlQueryParamTypes.string },
-    description: { type: UrlQueryParamTypes.string }
+    subtitle: { type: UrlQueryParamTypes.string },
+    description: { type: UrlQueryParamTypes.string },
+    mainImage: { type: UrlQueryParamTypes.string },
+    bgImage: { type: UrlQueryParamTypes.string }
 };
 
 class MainPage extends PureComponent {
     static propTypes = {
         title: PropTypes.string,
+        subtitle: PropTypes.string,
         description: PropTypes.string,
+        mainImage: PropTypes.string,
+        bgImage: PropTypes.string,
+
         // Change handlers are automatically generated and passed if a config is provided and
         // `addChangeHandlers` isn't false. They use `replaceIn` by default, just updating that
         // single query parameter and keeping the other existing ones.
         onChangeTitle: PropTypes.func,
+        onChangeSubtitle: PropTypes.func,
         onChangeDescription: PropTypes.func,
+        onChangeMainImage: PropTypes.func,
+        onChangeBgImage: PropTypes.func,
+
         onChangeUrlQueryParams: PropTypes.func
     };
 
@@ -30,45 +41,26 @@ class MainPage extends PureComponent {
     };
 
     render() {
-        const { title, description, onChangeTitle, onChangeDescription, onChangeUrlQueryParams } = this.props;
+        const {
+            title,
+            subtitle,
+            description,
+            mainImage,
+            bgImage,
+            onChangeTitle,
+            onChangeDescription,
+            onChangeMainImage,
+            onChangeBgImage,
+            onChangeUrlQueryParams
+        } = this.props;
 
         return (
             <div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Title</td>
-                            <td>{title}</td>
-                            <td>
-                                <button onClick={() => onChangeTitle(Math.random().toString(32).substring(8))}>
-                                    Change title
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Description</td>
-                            <td>{description}</td>
-                            <td>
-                                <button onClick={() => onChangeDescription(Math.random().toString(32).substring(8))}>
-                                    Change description
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={3}>
-                                <button
-                                    onClick={() =>
-                                        onChangeUrlQueryParams({
-                                            title: Math.random().toString(32).substring(8),
-                                            description: Math.random().toString(32).substring(8)
-                                        })}
-                                >
-                                    Change both with one URL update
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h1 class="title">{title}</h1>
+                <h2 class="subtitle">{subtitle}</h2>
+                <p class="content">{description}</p>
+                <p>{mainImage}</p>
+                <p>{bgImage}</p>
             </div>
         );
     }
