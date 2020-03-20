@@ -4,14 +4,13 @@ import history from './history';
 
 class App extends Component {
     componentDidMount() {
-        // Force an update if the URL changes
+        // Force an update if the URL changes.
         history.listen(() => this.forceUpdate());
     }
 
     render() {
         return (
             <div>
-                <h3>Instant website</h3>
                 <MainPage />
             </div>
         );
