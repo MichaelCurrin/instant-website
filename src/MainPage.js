@@ -15,6 +15,10 @@ const urlPropsQueryConfig = {
     bgImage: { type: UrlQueryParamTypes.string }
 };
 
+function imageSearchUrl(keyword, w, h) {
+    return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
+}
+
 class MainPage extends PureComponent {
     static propTypes = {
         title: PropTypes.string,
@@ -35,9 +39,13 @@ class MainPage extends PureComponent {
         onChangeUrlQueryParams: PropTypes.func
     };
 
+    // Note: These do not appear in the URL initially.
     static defaultProps = {
         title: 'Your title',
-        description: 'Your description'
+        subtitle: 'Your title',
+        description: 'Your description',
+        mainImage: 'water',
+        bgImage: 'nature'
     };
 
     render() {
@@ -47,6 +55,7 @@ class MainPage extends PureComponent {
             description,
             mainImage,
             bgImage,
+
             onChangeTitle,
             onChangeDescription,
             onChangeMainImage,
@@ -54,13 +63,17 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
+        const mainImgUrl = imageSearchUrl(mainImage, 96, 96),
+            bgImageUrl = imageSearchUrl(bgImage, 1200, 600);
+
         return (
-            <div>
+            <div style={{ backgroundImage: `url(${bgImageUrl})` }}>
                 <h1 class="title">{title}</h1>
                 <h2 class="subtitle">{subtitle}</h2>
                 <p class="content">{description}</p>
-                <p>{mainImage}</p>
-                <p>{bgImage}</p>
+                <p>
+                    <img src={mainImgUrl} />
+                </p>
             </div>
         );
     }
