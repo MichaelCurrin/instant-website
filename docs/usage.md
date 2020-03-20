@@ -10,11 +10,13 @@ Start the development server.
 $ npm start
 ```
 
+Or, if you use VS Code, open the Tasks list and select `npm: start`.
+
 Open in the browser:
 
 - http://localhost:3000
 
-The page will auto-reload on edits and you'll see lint errors in the console.
+The app will auto-reload on updating files. Also you'll see any lint errors in the console.
 
 
 ## Build
