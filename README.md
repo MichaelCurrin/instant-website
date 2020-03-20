@@ -26,7 +26,7 @@ Great for prototyping how a real or fictional business webpage could look like, 
 ### How do I use it?
 
 1. Choose your fields (title, background image, etc.) using a form tool.
-2. You will get a URL with your custom values in the query parameters.
+2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md).
 3. Use the URL to view a dynamic webpage which adapts to your values and changes the text and images to match it.
 4. Share the URL with others.
 
@@ -69,10 +69,9 @@ See [Remote](/docs/remote.md) doc.
     - [Image](https://bulma.io/documentation/elements/image/) element.
     - [Card](https://bulma.io/documentation/components/card/) components.
 
-
 ### React URL Query
 
-- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github. After I had the idea to use React to manage the state and push and pull URL params data, I soon found this project. I used that project's  [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo.
+- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github. After I had the idea to use React to manage the state and push and pull [URL query parameter](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md) data, I soon found this project. I used that project's [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo. The other examples use React Router, but I didn't want to add another dependency in case it added more complexity than what it reduced, especially if I the basic one works fine without that.
 
 ### Images
 
