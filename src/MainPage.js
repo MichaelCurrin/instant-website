@@ -49,8 +49,9 @@ class MainPage extends PureComponent {
     static defaultProps = {
         title: 'Your title',
         subtitle: 'Your title',
-        description: 'Your description',
-        mainImage: 'water',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
+        mainImage: 'nature',
         bgImage: 'nature'
     };
 
@@ -82,8 +83,8 @@ class MainPage extends PureComponent {
                             <div class="card-content ">
                                 <div class="media">
                                     <div class="media-left">
-                                        <figure class="image is-128x128">
-                                            <img src={mainImgUrl} alt="Custom image" />
+                                        <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
+                                            <img class="is-rounded" src={mainImgUrl} alt="Custom image" />
                                         </figure>
                                     </div>
 
@@ -93,7 +94,7 @@ class MainPage extends PureComponent {
                                     </div>
                                 </div>
 
-                                <p class="content"> {description}</p>
+                                <p class="content">{description}</p>
 
                                 <footer class="card-footer">
                                     <p class="card-footer-item">
