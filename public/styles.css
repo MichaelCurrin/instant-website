@@ -1,0 +1,43 @@
+html,
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+ *  Get paragraph to wrap by shrinking the card.
+ *
+ *  This can be fixed as exact width here rather than max width or percent, as the idea is the card
+ *  stays constant width and the space on the side expands on a widescreen.
+ *
+ *  This could be changed to em or similar.
+ */
+.card.is-wide {
+    width: 600px;
+}
+
+.card.has-text-centered .card-header,
+.card.has-text-centered .card-content,
+.card.has-text-centered .card-footer {
+    justify-content: center;
+    align-items: center;
+}
+
+.card.has-text-centered h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.card-header {
+    padding: 1.75rem 0;
+}
+
+.card-footer {
+    padding: 1rem 0;
+    border: none;
+    font-size: 0.9rem;
+    color: #808080;
+}
