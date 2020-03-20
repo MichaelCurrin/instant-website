@@ -9,11 +9,7 @@ class App extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <MainPage />
-            </div>
-        );
+        return <MainPage />;
     }
 }
 
