@@ -2,6 +2,12 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
 
+const MAIN_IMG_W = 128,
+    MAIN_IMG_H = 128,
+    BG_IMG_W = 1600,
+    BG_IMG_H = 900;
+const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
+
 /**
  * Specify how the URL gets decoded here.
  *
@@ -63,18 +69,44 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
-        const mainImgUrl = imageSearchUrl(mainImage, 96, 96),
-            bgImageUrl = imageSearchUrl(bgImage, 1200, 600);
+        const mainImgUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H),
+            bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
+
+        document.body.style.backgroundImage = `url(${bgImageUrl})`;
 
         return (
-            <div style={{ backgroundImage: `url(${bgImageUrl})` }}>
-                <h1 class="title">{title}</h1>
-                <h2 class="subtitle">{subtitle}</h2>
-                <p class="content">{description}</p>
-                <p>
-                    <img src={mainImgUrl} />
-                </p>
-            </div>
+            <main role="main">
+                <section>
+                    <div class="container">
+                        <div class="card is-wide">
+                            <div class="card-content ">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-128x128">
+                                            <img src={mainImgUrl} alt="Custom image" />
+                                        </figure>
+                                    </div>
+
+                                    <div class="media-content">
+                                        <p class="title is-4">{title}</p>
+                                        <p class="subtitle is-6">{subtitle}</p>
+                                    </div>
+                                </div>
+
+                                <p class="content"> {description}</p>
+
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <span>
+                                            Made with <a href={REPO_URL}>Instant Website</a>
+                                        </span>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         );
     }
 }
