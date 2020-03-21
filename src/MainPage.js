@@ -6,8 +6,11 @@ const MAIN_IMG_W = 128,
     MAIN_IMG_H = 128,
     BG_IMG_W = 1600,
     BG_IMG_H = 900;
-const REPO_URL = 'https://github.com/MichaelCurrin/instant-website',
-    PROJECT_TITLE = 'Instant Website';
+
+// Even if you fork this repo, please leave use URL as is to link back to the original rpeo.
+const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
+// But can be changed if you like.
+const PROJECT_TITLE = 'Instant Website';
 
 function imageSearchUrl(keyword, w, h) {
     return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
