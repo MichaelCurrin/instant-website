@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MainPage from './MainPage';
+import Nav from './Nav';
 import history from './history';
 
 class App extends Component {
@@ -10,9 +11,12 @@ class App extends Component {
 
     render() {
         return (
-            <main role="main">
-                <MainPage />
-            </main>
+            <div>
+                <Nav />
+                <main role="main">
+                    <MainPage />
+                </main>
+            </div>
         );
     }
 }
