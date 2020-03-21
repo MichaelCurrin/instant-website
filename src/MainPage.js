@@ -30,6 +30,10 @@ const urlPropsQueryConfig = {
 };
 
 function cardWithBackground(title, subtitle, description, mainImageValues, bgImageValues) {
+    // This flag can be changed later when some image URLs are deterministic.
+    const randomImages = true;
+    const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
+
     document.body.style.backgroundImage = `url(${bgImageValues.url})`;
 
     return (
@@ -56,6 +60,7 @@ function cardWithBackground(title, subtitle, description, mainImageValues, bgIma
                             <p class="card-footer-item">
                                 <span>
                                     Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
+                                    {refreshMsg}
                                 </span>
                             </p>
                         </footer>
