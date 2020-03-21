@@ -7,6 +7,11 @@ body {
     justify-content: center;
 }
 
+/* Default background. This helps when background URL is still loading. */
+body {
+    background-image: linear-gradient(to bottom right, #222, #eee);
+}
+
 /**
  *  Get paragraph to wrap by shrinking the card.
  *
