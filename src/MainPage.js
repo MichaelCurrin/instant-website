@@ -8,10 +8,14 @@ const MAIN_IMG_W = 128,
     BG_IMG_H = 900;
 const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
 
+function imageSearchUrl(keyword, w, h) {
+    return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
+}
+
 /**
- * Specify how the URL gets decoded here.
+ * Configure parameter names and types.
  *
- * Optionally use `queryParam: 'fooInUrl'` after type for custom name.
+ * Optionally use `queryParam: 'fooInUrl'` in the value to set custom name.
  */
 const urlPropsQueryConfig = {
     title: { type: UrlQueryParamTypes.string },
@@ -21,8 +25,41 @@ const urlPropsQueryConfig = {
     bgImage: { type: UrlQueryParamTypes.string }
 };
 
-function imageSearchUrl(keyword, w, h) {
-    return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
+function cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl) {
+    document.body.style.backgroundImage = `url(${bgImageUrl})`;
+
+    return (
+        <section>
+            <div class="container">
+                <div class="card is-wide">
+                    <div class="card-content ">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
+                                    <img class="is-rounded" src={mainImgUrl} alt="Custom image" />
+                                </figure>
+                            </div>
+
+                            <div class="media-content">
+                                <p class="title is-4">{title}</p>
+                                <p class="subtitle is-6">{subtitle}</p>
+                            </div>
+                        </div>
+
+                        <p class="content">{description}</p>
+
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    Made with <a href={REPO_URL}>Instant Website</a>
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
 
 class MainPage extends PureComponent {
@@ -42,10 +79,11 @@ class MainPage extends PureComponent {
         onChangeMainImage: PropTypes.func,
         onChangeBgImage: PropTypes.func,
 
+        // To change multiple values at once.
         onChangeUrlQueryParams: PropTypes.func
     };
 
-    // Note: These do not appear in the URL initially.
+    // Default values. These do not appear in the URL.
     static defaultProps = {
         title: 'Your title',
         subtitle: 'Your title',
@@ -67,48 +105,14 @@ class MainPage extends PureComponent {
             onChangeDescription,
             onChangeMainImage,
             onChangeBgImage,
+
             onChangeUrlQueryParams
         } = this.props;
 
         const mainImgUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H),
             bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
 
-        document.body.style.backgroundImage = `url(${bgImageUrl})`;
-
-        return (
-            <main role="main">
-                <section>
-                    <div class="container">
-                        <div class="card is-wide">
-                            <div class="card-content ">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
-                                            <img class="is-rounded" src={mainImgUrl} alt="Custom image" />
-                                        </figure>
-                                    </div>
-
-                                    <div class="media-content">
-                                        <p class="title is-4">{title}</p>
-                                        <p class="subtitle is-6">{subtitle}</p>
-                                    </div>
-                                </div>
-
-                                <p class="content">{description}</p>
-
-                                <footer class="card-footer">
-                                    <p class="card-footer-item">
-                                        <span>
-                                            Made with <a href={REPO_URL}>Instant Website</a>
-                                        </span>
-                                    </p>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        );
+        return cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl);
     }
 }
 

@@ -9,7 +9,11 @@ class App extends Component {
     }
 
     render() {
-        return <MainPage />;
+        return (
+            <main role="main">
+                <MainPage />
+            </main>
+        );
     }
 }
 
