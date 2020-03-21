@@ -29,12 +29,14 @@ const urlPropsQueryConfig = {
     bgImage: { type: UrlQueryParamTypes.string }
 };
 
-function cardWithBackground(title, subtitle, description, mainImageValues, bgImageValues) {
+function setBgImgUrl(url) {
+    document.body.style.backgroundImage = `url(${url})`;
+}
+
+function cardWithBackground(title, subtitle, description, mainImageValues) {
     // This flag can be changed later when some image URLs are deterministic.
     const randomImages = true;
     const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
-
-    document.body.style.backgroundImage = `url(${bgImageValues.url})`;
 
     return (
         <section>
@@ -129,7 +131,9 @@ class MainPage extends PureComponent {
                 url: imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)
             };
 
-        return cardWithBackground(title, subtitle, description, mainImageValues, bgImageValues);
+        setBgImgUrl(bgImageValues.url);
+
+        return cardWithBackground(title, subtitle, description, mainImageValues);
     }
 }
 
