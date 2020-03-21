@@ -7,7 +7,8 @@ body {
     justify-content: center;
 }
 
-/* Default background. This helps when background URL is still loading. */
+/* Default background. Setting it on HTML prevents a white background when the body image is rendered slowly. */
+html,
 body {
     background-image: linear-gradient(to bottom right, #222, #eee);
 }
