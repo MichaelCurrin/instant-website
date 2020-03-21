@@ -1,5 +1,5 @@
 # Instant website
-> Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding.
+> Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8f1fc5a5-1b67-4d14-94c6-512c4eacdad7/deploy-status)](https://app.netlify.com/sites/instant-website/deploys)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://GitHub.com/MichaelCurrin/instant-website/tags/)
