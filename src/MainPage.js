@@ -17,7 +17,7 @@ function imageSearchUrl(keyword, w, h) {
 }
 
 /**
- * Configure parameter names and types.
+ * Configure URL query parameter names and types.
  *
  * Optionally use `queryParam: 'fooInUrl'` in the value to set custom name.
  */
