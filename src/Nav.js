@@ -1,4 +1,4 @@
-import React, { Link } from 'react';
+import React from 'react';
 
 function Nav(props) {
     return (
