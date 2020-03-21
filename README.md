@@ -12,6 +12,8 @@ Great for prototyping how a real or fictional business webpage could look like, 
 
 - Project site: [instant-website.netlify.com](https://instant-website.netlify.com/)
 
+Table of contents:
+
 - [Features](#features)
     - [What can it do?](#what-can-it-do)
     - [How do I use it?](#how-do-i-use-it)
@@ -24,7 +26,7 @@ Great for prototyping how a real or fictional business webpage could look like, 
     - [Bulma card layout](#bulma-card-layout)
     - [React URL Query](#react-url-query)
     - [Images](#images)
-    -
+    
 
 ## Features
 
