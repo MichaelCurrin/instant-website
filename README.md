@@ -12,6 +12,19 @@ Great for prototyping how a real or fictional business webpage could look like, 
 
 - Project site: [instant-website.netlify.com](https://instant-website.netlify.com/)
 
+- [Features](#features)
+    - [What can it do?](#what-can-it-do)
+    - [How do I use it?](#how-do-i-use-it)
+- [Purpose and background](#purpose-and-background)
+    - [Inspiration for design](#inspiration-for-design)
+- [Setup and run](#setup-and-run)
+    - [How to run remotely](#how-to-run-remotely)
+    - [How to run locally](#how-to-run-locally)
+- [Credits](#credits)
+    - [Bulma card layout](#bulma-card-layout)
+    - [React URL Query](#react-url-query)
+    - [Images](#images)
+    -
 
 ## Features
 
@@ -48,13 +61,13 @@ The appearance of the site is kept simple - some text and some images, with a fi
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 - [docsify](https://docsify.js.org/#/) cover page.
 
+## Setup and run
 
-## Remote setup
+### How to run remotely
 
-See [Remote](/docs/remote.md) doc.
+See the [Remote](/docs/remote.md) doc.
 
-
-## Local setup
+### How to run locally
 
 - [Installation](/docs/installation.md).
 - [Usage](/docs/usage.md)
@@ -65,17 +78,20 @@ See [Remote](/docs/remote.md) doc.
 
 ### Bulma card layout
 
-- [CodePen](https://codepen.io/egoens/pen/NbmEbR) of a centered card, made Bulma. This HTML and CSS (specified there SCSS) as was used as the basis for my project's layout.
+- [CodePen](https://codepen.io/egoens/pen/NbmEbR) which shows a centered card and uses Bulma. This HTML and CSS (specified there SCSS) as was used as the basis for my project's layout.
 - Bulma tutorials
     - [Image](https://bulma.io/documentation/elements/image/) element.
     - [Card](https://bulma.io/documentation/components/card/) components.
 
 ### React URL Query
 
-- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github. After I had the idea to use React to manage the state and push and pull [URL query parameter](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md) data, I soon found this project. I used that project's [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo. The other examples use React Router, but I didn't want to add another dependency in case it added more complexity than what it reduced, especially if I the basic one works fine without that.
+- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github.
+    - After I had the idea to use React to manage the state and push and pull [URL query parameter](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md) data, I soon found this project.
+    - I used that project's [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo.
+    - The other examples use React Router, but I didn't want to add another dependency in case it added more complexity than what it reduced, especially if I the basic one works fine without that.
 
 ### Images
 
-Stock image used for free from [unsplash.com](https://unsplash.com) and loaded through their [source.unsplash.com]((https://source.unsplash.com) domain.
+Stock image used for free from [unsplash.com](https://unsplash.com) and loaded through their [source.unsplash.com](https://source.unsplash.com) domain.
 
 Read more [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/stock_images.md).
