@@ -6,7 +6,8 @@ const MAIN_IMG_W = 128,
     MAIN_IMG_H = 128,
     BG_IMG_W = 1600,
     BG_IMG_H = 900;
-const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
+const REPO_URL = 'https://github.com/MichaelCurrin/instant-website',
+    PROJECT_TITLE = 'Instant Website';
 
 function imageSearchUrl(keyword, w, h) {
     return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
@@ -25,8 +26,8 @@ const urlPropsQueryConfig = {
     bgImage: { type: UrlQueryParamTypes.string }
 };
 
-function cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl) {
-    document.body.style.backgroundImage = `url(${bgImageUrl})`;
+function cardWithBackground(title, subtitle, description, mainImageValues, bgImageValues) {
+    document.body.style.backgroundImage = `url(${bgImageValues.url})`;
 
     return (
         <section>
@@ -35,8 +36,8 @@ function cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl
                     <div class="card-content ">
                         <div class="media">
                             <div class="media-left">
-                                <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
-                                    <img class="is-rounded" src={mainImgUrl} alt="Custom image" />
+                                <figure className={`image is-${mainImageValues.width}x${mainImageValues.height}`}>
+                                    <img class="is-rounded" src={mainImageValues.url} alt="Custom image" />
                                 </figure>
                             </div>
 
@@ -51,7 +52,7 @@ function cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl
                         <footer class="card-footer">
                             <p class="card-footer-item">
                                 <span>
-                                    Made with <a href={REPO_URL}>Instant Website</a>
+                                    Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
                                 </span>
                             </p>
                         </footer>
@@ -109,10 +110,18 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
-        const mainImgUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H),
-            bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
+        const mainImageValues = {
+                width: MAIN_IMG_W,
+                height: MAIN_IMG_H,
+                url: imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H)
+            },
+            bgImageValues = {
+                width: BG_IMG_W,
+                height: BG_IMG_H,
+                url: imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)
+            };
 
-        return cardWithBackground(title, subtitle, description, mainImgUrl, bgImageUrl);
+        return cardWithBackground(title, subtitle, description, mainImageValues, bgImageValues);
     }
 }
 
