@@ -1,10 +1,21 @@
 {
     "name": "instant-website",
+    "description": "Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding",
+    "version": "0.1.0",
+
+    "keywords": ["react", "react-url-query", "unsplash", "query-strings"],
     "author": {
         "name": "Michael Currin",
         "url": "https://MichaelCurrin.github.io/"
     },
-    "version": "0.0.1",
+    "license": "MIT",
+
+    "homepage": "https://instant-website.netlify.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MichaelCurrin/instant-website.git"
+    },
+
     "devDependencies": {
         "react-scripts": "^0.6.1"
     },
@@ -15,10 +26,10 @@
         "react-dom": "^16.1.1",
         "react-url-query": "^1"
     },
+
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom"
-    },
-    "license": "MIT"
+    }
 }
