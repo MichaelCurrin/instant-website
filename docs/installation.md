@@ -4,8 +4,12 @@
 
 ## Requirements
 
-- [NodeJS](https://nodejs.org)
-- [React URL Query](https://www.npmjs.com/package/react-url-query)
+
+| Name                        | Role                                         |
+| --------------------------- | -------------------------------------------- |
+| [Node](https://nodejs.org/) | Install and run Node packages from NPM site. |
+| [Netlify](netlify.com/)     | Optional - host the website here.            |
+
 
 ## System dependencies
 
@@ -23,3 +27,8 @@ Install project dependencies.
 ```sh
 $ npm install
 ```
+
+Highlights are:
+
+- [React URL Query](https://www.npmjs.com/package/react-url-query)
+- [Bulma](https://bulma.io/)

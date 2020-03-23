@@ -26,7 +26,7 @@ Table of contents:
     - [Bulma card layout](#bulma-card-layout)
     - [React URL Query](#react-url-query)
     - [Images](#images)
-    
+
 
 ## Features
 
