@@ -19,6 +19,7 @@ Table of contents:
     - [How do I use it?](#how-do-i-use-it)
 - [Purpose and background](#purpose-and-background)
     - [Inspiration for design](#inspiration-for-design)
+- [Requirements](#requirements)
 - [Setup and run](#setup-and-run)
     - [How to run remotely](#how-to-run-remotely)
     - [How to run locally](#how-to-run-locally)
@@ -62,6 +63,16 @@ The appearance of the site is kept simple - some text and some images, with a fi
 - [whoopi-goldbot.netlify.com](https://whoopi-goldbot.netlify.com/)
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 - [docsify](https://docsify.js.org/#/) cover page.
+
+
+## Requirements
+
+
+| Name                        | Role                                         |
+| --------------------------- | -------------------------------------------- |
+| [Node](https://nodejs.org/) | Install and run Node packages from NPM site. |
+| [Netlify](netlify.com/)     | Optionally host the site here.               |
+
 
 ## Setup and run
 

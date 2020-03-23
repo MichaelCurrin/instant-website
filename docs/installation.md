@@ -2,15 +2,6 @@
 > Local install guide
 
 
-## Requirements
-
-
-| Name                        | Role                                         |
-| --------------------------- | -------------------------------------------- |
-| [Node](https://nodejs.org/) | Install and run Node packages from NPM site. |
-| [Netlify](netlify.com/)     | Optional - host the website here.            |
-
-
 ## System dependencies
 
 Install NodeJS using instructions [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Scripting%20languages/JavaScript/node.md)
