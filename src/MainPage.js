@@ -46,7 +46,7 @@ function cardWithBackground(title, subtitle, description, mainImageValues) {
                         <div class="media">
                             <div class="media-left">
                                 <figure className={`image is-${mainImageValues.width}x${mainImageValues.height}`}>
-                                    <img class="is-rounded" src={mainImageValues.url} alt="Custom image" />
+                                    <img class="is-rounded" src={mainImageValues.url} alt="Small profile" />
                                 </figure>
                             </div>
 
