@@ -96,8 +96,8 @@ class MainPage extends PureComponent {
 
     // Default values. These do not appear in the URL.
     static defaultProps = {
-        title: 'Your title',
-        subtitle: 'Your title',
+        title: 'Instant website',
+        subtitle: 'Just add inspiration',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
         mainImage: 'nature',
