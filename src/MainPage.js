@@ -31,10 +31,11 @@ function imageSearchUrl(keywords, w, h) {
 }
 
 function setBgImgUrl(url) {
+    var result;
     if (url) {
-        var result = `url(${url})`;
+        result = `url(${url})`;
     } else {
-        var result = 'inherit';
+        result = 'inherit';
     }
 
     document.body.style.backgroundImage = result;
