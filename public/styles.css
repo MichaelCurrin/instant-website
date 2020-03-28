@@ -10,6 +10,7 @@ body {
 /* Default background. Setting it on html prevents a white background when the body image is rendered slowly. */
 html {
     background-image: linear-gradient(to bottom right, #222, #eee);
+    background-repeat: no-repeat;
 }
 
 /**
