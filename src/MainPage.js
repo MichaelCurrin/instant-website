@@ -127,18 +127,15 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
-        const mainImageValues = {
-                width: MAIN_IMG_W,
-                height: MAIN_IMG_H,
-                url: imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H)
-            },
-            bgImageValues = {
-                width: BG_IMG_W,
-                height: BG_IMG_H,
-                url: imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)
-            };
+        const bgImageUrl = bgImage ? imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H) : null;
+        setBgImgUrl(bgImageUrl);
 
-        setBgImgUrl(bgImageValues.url);
+        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
+        const mainImageValues = {
+            width: MAIN_IMG_W,
+            height: MAIN_IMG_H,
+            url: mainImageUrl
+        };
 
         return cardWithBackground(title, subtitle, description, mainImageValues);
     }
