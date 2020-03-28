@@ -7,7 +7,12 @@ body {
     justify-content: center;
 }
 
-/* Default background. Setting it on html prevents a white background when the body image is rendered slowly. */
+/*
+ * Default background pattern.
+ *
+ * Setting it on `html` prevents a white background when the body image is rendered slowly.
+ * Using cyan to darkblue also works, but greyish background is best for partial image rendering.
+ */
 html {
     background-image: linear-gradient(to bottom right, #222, #eee);
     background-repeat: no-repeat;
