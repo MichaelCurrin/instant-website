@@ -31,7 +31,13 @@ function imageSearchUrl(keywords, w, h) {
 }
 
 function setBgImgUrl(url) {
-    document.body.style.backgroundImage = `url(${url})`;
+    if (url) {
+        var result = `url(${url})`;
+    } else {
+        var result = 'inherit';
+    }
+
+    document.body.style.backgroundImage = result;
 }
 
 function cardWithBackground(title, subtitle, description, mainImageValues) {
