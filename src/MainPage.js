@@ -12,10 +12,6 @@ const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
 // But can be changed if you like.
 const PROJECT_TITLE = 'Instant Website';
 
-function imageSearchUrl(keyword, w, h) {
-    return `https://source.unsplash.com/${w}x${h}/?${keyword}`;
-}
-
 /**
  * Configure URL query parameter names and types.
  *
@@ -28,6 +24,11 @@ const urlPropsQueryConfig = {
     mainImage: { type: UrlQueryParamTypes.string },
     bgImage: { type: UrlQueryParamTypes.string }
 };
+
+/* URL for search using comma-separated keywords. Any random image will be returned if keywords are omitted. */
+function imageSearchUrl(keywords, w, h) {
+    return `https://source.unsplash.com/${w}x${h}/?${keywords}`;
+}
 
 function setBgImgUrl(url) {
     document.body.style.backgroundImage = `url(${url})`;
