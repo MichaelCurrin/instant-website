@@ -9,7 +9,7 @@ const MAIN_IMG_W = 128,
 
 // Even if you fork this repo, please leave use URL as is to link back to the original rpeo.
 const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
-// But can be changed if you like.
+// But this can be changed if you like.
 const PROJECT_TITLE = 'Instant Website';
 
 /**
