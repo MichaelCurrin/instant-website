@@ -24,9 +24,9 @@
         "prop-types": "^15.5.9",
         "react": "^16.1.1",
         "react-dom": "^16.1.1",
-        "react-url-query": "^1"
+        "react-url-query": "^1",
+        "bulma": "^0.8.0"
     },
-
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
