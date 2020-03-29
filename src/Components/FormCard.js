@@ -55,7 +55,6 @@ function FormCard(props) {
                                 value={title}
                                 onChange={(e) => onChangeTitle(e.target.value)}
                             />
-                            <p class="help">Updates title immediately.</p>
                         </div>
                     </div>
 
@@ -75,7 +74,6 @@ function FormCard(props) {
                                 value={subtitle}
                                 onChange={(e) => onChangeSubtitle(e.target.value)}
                             />
-                            <p class="help">Updates subtitle immediately.</p>
                         </div>
                     </div>
 
@@ -94,7 +92,6 @@ function FormCard(props) {
                                 value={description}
                                 onChange={(e) => onChangeDescription(e.target.value)}
                             />
-                            <p class="help">Updates description immediately.</p>
                         </div>
                     </div>
 
