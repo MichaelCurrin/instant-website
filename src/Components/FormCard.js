@@ -2,7 +2,7 @@ import React from 'react';
 
 function mkOptions(availableChoices) {
     var selectOptionComponents = availableChoices.map((choice) => <option value={choice}>{choice}</option>);
-    selectOptionComponents.unshift(<option value="">(default)</option>);
+    selectOptionComponents.unshift(<option value="">(random)</option>);
 
     return selectOptionComponents;
 }
