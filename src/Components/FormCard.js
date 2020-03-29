@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { IMAGE_SEARCH_OPTIONS } from '../constants';
+
 function mkOptions(availableChoices) {
     var selectOptionComponents = availableChoices.map((choice) => <option value={choice}>{choice}</option>);
     selectOptionComponents.unshift(<option value="">(random)</option>);
@@ -24,8 +26,7 @@ function FormCard(props) {
         onChangeBgImage
     } = props;
 
-    const availableChoices = [ 'african', 'picture', 'sock', 'software', 'nature' ];
-    const options = mkOptions(availableChoices);
+    const options = mkOptions(IMAGE_SEARCH_OPTIONS);
 
     return (
         <div class="card">
