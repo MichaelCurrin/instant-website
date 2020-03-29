@@ -42,18 +42,16 @@ class MainPage extends PureComponent {
         bgImage: PropTypes.string,
         showForm: PropTypes.bool,
 
+        // Note from basic template project:
         // Change handlers are automatically generated and passed if a config is provided and
         // `addChangeHandlers` isn't false. They use `replaceIn` by default, just updating that
         // single query parameter and keeping the other existing ones.
         onChangeTitle: PropTypes.func,
         onChangeSubtitle: PropTypes.func,
         onChangeDescription: PropTypes.func,
-        onChangeMainImage: PropTypes.func,
-        onChangeBgImage: PropTypes.func,
-        onChangeShowForm: PropTypes.func,
 
-        // To change multiple values at once.
-        onChangeUrlQueryParams: PropTypes.func
+        onChangeMainImage: PropTypes.func,
+        onChangeBgImage: PropTypes.func
     };
 
     // Default values. These do not appear in the URL.
@@ -68,37 +66,26 @@ class MainPage extends PureComponent {
     };
 
     render() {
-        const {
+        const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;
+
+        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
+
+        const displayCard = DisplayCard({
             title,
             subtitle,
             description,
-            mainImage,
-            bgImage,
-            showForm,
-
-            onChangeTitle,
-            onChangeDescription,
-            onChangeMainImage,
-            onChangeBgImage,
-            onChangeShowForm,
-
-            onChangeUrlQueryParams
-        } = this.props;
-
-        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
-        const mainImageValues = {
-            width: MAIN_IMG_W,
-            height: MAIN_IMG_H,
-            url: mainImageUrl
-        };
-
-        const displayCard = DisplayCard({
-            title: title,
-            subtitle: subtitle,
-            description: description,
-            mainImageValues: mainImageValues
+            mainImageUrl
         });
-        const formCard = showForm ? FormCard({}) : null;
+
+        var formCard;
+        if (showForm === true) {
+            // Pass through props. These could be defined in `FormCard` but then it has to be
+            // rewritten as a class and then used differently here.
+            formCard = FormCard(this.props);
+        } else {
+            formCard = null;
+        }
+
         const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         return (

@@ -3,20 +3,20 @@ import React from 'react';
 import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, PROJECT_TITLE } from '../constants';
 
 function DisplayCard(props) {
-    const { title, subtitle, description, mainImageValues } = props;
+    const { title, subtitle, description, mainImageUrl } = props;
 
     // This flag can be changed later when some image URLs are deterministic.
     const randomImages = true;
     const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
 
-    // Note that an outer div added with class="card" will add a shadow and spacing within the
+    // Note that an outer div added with class="card" will add a shadow and spacing within the card.
     return (
-        <div class="card is-wide">
-            <div class="card-content ">
+        <div class="card">
+            <div class="card-content">
                 <div class="media">
                     <div class="media-left">
-                        <figure className={`image is-${mainImageValues.width}x${mainImageValues.height}`}>
-                            <img class="is-rounded" src={mainImageValues.url} alt="Small profile" />
+                        <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
+                            <img class="is-rounded" src={mainImageUrl} alt="Small profile" />
                         </figure>
                     </div>
 
@@ -27,6 +27,7 @@ function DisplayCard(props) {
                 </div>
 
                 <p class="content">{description}</p>
+                <br />
 
                 <footer class="card-footer">
                     <p class="card-footer-item">
