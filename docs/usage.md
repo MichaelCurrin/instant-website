@@ -2,6 +2,15 @@
 > Local use guide
 
 
+## Available commands
+
+This will print the list of commands and what they do.
+
+```sh
+$ npm run
+```
+
+
 ## Start
 
 Start the development server.
