@@ -56,7 +56,7 @@ function FormCard(props) {
                     <br />
 
                     <div className="field">
-                        <label className="label" for="title-input">
+                        <label className="label" htmlFor="title-input">
                             Title
                         </label>
                         <div className="control">
@@ -75,7 +75,7 @@ function FormCard(props) {
                     </div>
 
                     <div className="field">
-                        <label className="label" for="subtitle-input">
+                        <label className="label" htmlFor="subtitle-input">
                             Subtitle
                         </label>
                         <div className="control">
@@ -94,7 +94,7 @@ function FormCard(props) {
                     </div>
 
                     <div className="field">
-                        <label className="label" for="description-input">
+                        <label className="label" htmlFor="description-input">
                             Description
                         </label>
                         <div className="control">
@@ -116,7 +116,7 @@ function FormCard(props) {
                     <h4 className="subtitle is-4">Choose images</h4>
 
                     <div className="field">
-                        <label className="label" for="main-image-input">
+                        <label className="label" htmlFor="main-image-input">
                             Main image
                         </label>
                         <div className="control">
@@ -130,7 +130,7 @@ function FormCard(props) {
                     </div>
 
                     <div className="field">
-                        <label className="label" for="bg-image-input">
+                        <label className="label" htmlFor="bg-image-input">
                             Background image
                         </label>
                         <div className="control">
