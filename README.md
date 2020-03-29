@@ -91,10 +91,14 @@ See the [Remote](/docs/remote.md) doc.
 
 ### Bulma card layout
 
-- [CodePen](https://codepen.io/egoens/pen/NbmEbR) which shows a centered card and uses Bulma. This HTML and CSS (specified there SCSS) as was used as the basis for my project's layout.
+- [CodePen](https://codepen.io/egoens/pen/NbmEbR)
+    - Shows a centered card and uses Bulma.
+    - This HTML and CSS (specified there as SCSS) as was used as the basis for this project's layout. Then later realized using a Bulma Modal element that is always visible and has no shaded background needs far less custom CSS and so did that instead. see _Modal_ below.
 - Bulma tutorials
     - [Image](https://bulma.io/documentation/elements/image/) element.
     - [Card](https://bulma.io/documentation/components/card/) components.
+    - [Modal](https://bulma.io/documentation/components/modal/) component.
+    - [Hero](https://bulma.io/documentation/layout/hero/#fullheight-hero) component. Full height hero as background image, plus navbar is shown there.
 
 ### React URL Query
 
