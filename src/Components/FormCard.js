@@ -42,26 +42,26 @@ function FormCard(props) {
     const options = mkOptions(IMAGE_SEARCH_OPTIONS);
 
     return (
-        <div class="card">
-            <div class="card-content">
+        <div className="card">
+            <div className="card-content">
                 <div id="controls">
-                    <h3 class="subtitle is-3">Customize this page</h3>
+                    <h3 className="subtitle is-3">Customize this page</h3>
 
-                    <h4 class="subtitle is-4">Choose text</h4>
+                    <h4 className="subtitle is-4">Choose text</h4>
 
-                    <p class="help">
+                    <p className="help">
                         An empty field will revert to a default value, however a single empty space is allowed to make
                         it appear empty in the display.
                     </p>
                     <br />
 
-                    <div class="field">
-                        <label class="label" for="title-input">
+                    <div className="field">
+                        <label className="label" for="title-input">
                             Title
                         </label>
-                        <div class="control">
+                        <div className="control">
                             <input
-                                class="input"
+                                className="input"
                                 type="text"
                                 id="title-input"
                                 name="title-input"
@@ -74,13 +74,13 @@ function FormCard(props) {
                         </div>
                     </div>
 
-                    <div class="field">
-                        <label class="label" for="subtitle-input">
+                    <div className="field">
+                        <label className="label" for="subtitle-input">
                             Subtitle
                         </label>
-                        <div class="control">
+                        <div className="control">
                             <input
-                                class="input"
+                                className="input"
                                 id="subtitle-input"
                                 name="subtitle-input"
                                 type="text"
@@ -93,13 +93,13 @@ function FormCard(props) {
                         </div>
                     </div>
 
-                    <div class="field">
-                        <label class="label" for="description-input">
+                    <div className="field">
+                        <label className="label" for="description-input">
                             Description
                         </label>
-                        <div class="control">
+                        <div className="control">
                             <textarea
-                                class="textarea"
+                                className="textarea"
                                 id="description-input"
                                 name="description-input"
                                 placeholder="Enter your longer description"
@@ -113,28 +113,28 @@ function FormCard(props) {
 
                     <br />
 
-                    <h4 class="subtitle is-4">Choose images</h4>
+                    <h4 className="subtitle is-4">Choose images</h4>
 
-                    <div class="field">
-                        <label class="label" for="main-image-input">
+                    <div className="field">
+                        <label className="label" for="main-image-input">
                             Main image
                         </label>
-                        <div class="control">
-                            <div class="select" id="main-image-input" name="main-image-input">
+                        <div className="control">
+                            <div className="select" id="main-image-input" name="main-image-input">
                                 <select value={mainImage} onChange={(e) => onChangeMainImage(e.target.value)}>
                                     {options}
                                 </select>
                             </div>
-                            <p class="help">Used for the profile image.</p>
+                            <p className="help">Used for the profile image.</p>
                         </div>
                     </div>
 
-                    <div class="field">
-                        <label class="label" for="bg-image-input">
+                    <div className="field">
+                        <label className="label" for="bg-image-input">
                             Background image
                         </label>
-                        <div class="control">
-                            <div class="select" id="bg-image-input" name="bg-image-input">
+                        <div className="control">
+                            <div className="select" id="bg-image-input" name="bg-image-input">
                                 <select value={bgImage} onChange={(e) => onChangeBgImage(e.target.value)}>
                                     {options}
                                 </select>

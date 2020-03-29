@@ -9,15 +9,15 @@ function Modal(props) {
     const { displayCard, formCard } = props;
 
     return (
-        <div class="modal is-active">
-            <div class="modal-card">
-                <header class="modal-card-head" />
-                <section class="modal-card-body">
+        <div className="modal is-active">
+            <div className="modal-card">
+                <header className="modal-card-head" />
+                <section className="modal-card-body">
                     <div>{displayCard}</div>
                     {formCard && <hr />}
                     <div>{formCard}</div>
                 </section>
-                <footer class="modal-card-foot" />
+                <footer className="modal-card-foot" />
             </div>
         </div>
     );
