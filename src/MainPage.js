@@ -68,7 +68,8 @@ class MainPage extends PureComponent {
     render() {
         const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;
 
-        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
+        // Double the resolution of the container, to prevent blurry images.
+        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
 
         const displayCard = DisplayCard({
             title,
