@@ -15,3 +15,13 @@ html {
 #bg {
     background-size: cover;
 }
+
+/* Allow content to scroll inside the modal. From: https://github.com/jgthms/bulma/issues/2150 */
+.modal-card {
+    overflow: auto;
+}
+
+/* Override Bulma styling to stop widgets from being so wide. */
+.input {
+    width: inherit;
+}
