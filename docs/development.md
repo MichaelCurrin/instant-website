@@ -1,6 +1,10 @@
 # Development
 > Notes for working on this project
 
+## Key
+
+The key attribute is used wherever there is a list of components since React JS browser console warnings require unique keys for arrays, as text or worst case as index numbers.
+
 ## Image data
 
 See [imageData.json](/src/imageData.json).
