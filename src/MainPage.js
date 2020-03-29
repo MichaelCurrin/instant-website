@@ -2,18 +2,17 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
 
-const MAIN_IMG_W = 128,
-    MAIN_IMG_H = 128,
-    BG_IMG_W = 1600,
-    BG_IMG_H = 900;
+import BgHero from './Components/BgHero';
+import DisplayCard from './Components/DisplayCard';
+import FormCard from './Components/FormCard';
+import Modal from './Components/Modal';
 
-// Even if you fork this repo, please leave use URL as is to link back to the original rpeo.
-const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
-// But this can be changed if you like.
-const PROJECT_TITLE = 'Instant Website';
+import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H } from './constants';
 
 /**
  * Configure URL query parameter names and types.
+ *
+ * Note the boolean values must be passed as 1 or 0 in the URL.
  *
  * Optionally use `queryParam: 'fooInUrl'` in the value to set custom name.
  */
@@ -22,7 +21,8 @@ const urlPropsQueryConfig = {
     subtitle: { type: UrlQueryParamTypes.string },
     description: { type: UrlQueryParamTypes.string },
     mainImage: { type: UrlQueryParamTypes.string },
-    bgImage: { type: UrlQueryParamTypes.string }
+    bgImage: { type: UrlQueryParamTypes.string },
+    showForm: { type: UrlQueryParamTypes.boolean }
 };
 
 /* URL for search using comma-separated keywords. Any random image will be returned if keywords are omitted. */
@@ -30,55 +30,9 @@ function imageSearchUrl(keywords, w, h) {
     return `https://source.unsplash.com/${w}x${h}/?${keywords}`;
 }
 
-function setBgImgUrl(url) {
-    var result;
-    if (url) {
-        result = `url(${url})`;
-    } else {
-        result = 'inherit';
-    }
-
-    document.body.style.backgroundImage = result;
-}
-
-function Card(props) {
-    const { title, subtitle, description, mainImageValues } = props;
-
-    // This flag can be changed later when some image URLs are deterministic.
-    const randomImages = true;
-    const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
-
-    return (
-        <div class="card is-wide">
-            <div class="card-content ">
-                <div class="media">
-                    <div class="media-left">
-                        <figure className={`image is-${mainImageValues.width}x${mainImageValues.height}`}>
-                            <img class="is-rounded" src={mainImageValues.url} alt="Small profile" />
-                        </figure>
-                    </div>
-
-                    <div class="media-content">
-                        <p class="title is-4">{title}</p>
-                        <p class="subtitle is-6">{subtitle}</p>
-                    </div>
-                </div>
-
-                <p class="content">{description}</p>
-
-                <footer class="card-footer">
-                    <p class="card-footer-item">
-                        <span>
-                            Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
-                            {refreshMsg}
-                        </span>
-                    </p>
-                </footer>
-            </div>
-        </div>
-    );
-}
-
+/**
+ * Handle query params in the URL and inputs on the page and render the page.
+ */
 class MainPage extends PureComponent {
     static propTypes = {
         title: PropTypes.string,
@@ -86,18 +40,18 @@ class MainPage extends PureComponent {
         description: PropTypes.string,
         mainImage: PropTypes.string,
         bgImage: PropTypes.string,
+        showForm: PropTypes.bool,
 
+        // Note from basic template project:
         // Change handlers are automatically generated and passed if a config is provided and
         // `addChangeHandlers` isn't false. They use `replaceIn` by default, just updating that
         // single query parameter and keeping the other existing ones.
         onChangeTitle: PropTypes.func,
         onChangeSubtitle: PropTypes.func,
         onChangeDescription: PropTypes.func,
-        onChangeMainImage: PropTypes.func,
-        onChangeBgImage: PropTypes.func,
 
-        // To change multiple values at once.
-        onChangeUrlQueryParams: PropTypes.func
+        onChangeMainImage: PropTypes.func,
+        onChangeBgImage: PropTypes.func
     };
 
     // Default values. These do not appear in the URL.
@@ -107,47 +61,35 @@ class MainPage extends PureComponent {
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
         mainImage: '',
-        bgImage: ''
+        bgImage: 'nature',
+        showForm: true
     };
 
     render() {
-        const {
+        const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;
+
+        // Double the resolution of the container, to prevent blurry images.
+        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
+
+        const displayCard = DisplayCard({
             title,
             subtitle,
             description,
-            mainImage,
-            bgImage,
+            mainImageUrl
+        });
 
-            onChangeTitle,
-            onChangeDescription,
-            onChangeMainImage,
-            onChangeBgImage,
+        var formCard;
+        if (showForm === true) {
+            // Pass through props. These could be defined in `FormCard` but then it has to be
+            // rewritten as a class and then used differently here.
+            formCard = FormCard(this.props);
+        } else {
+            formCard = null;
+        }
 
-            onChangeUrlQueryParams
-        } = this.props;
+        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
-        const bgImageUrl = bgImage ? imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H) : null;
-        setBgImgUrl(bgImageUrl);
-
-        const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
-        const mainImageValues = {
-            width: MAIN_IMG_W,
-            height: MAIN_IMG_H,
-            url: mainImageUrl
-        };
-
-        return (
-            <section>
-                <div class="container">
-                    <Card
-                        title={title}
-                        subtitle={subtitle}
-                        description={description}
-                        mainImageValues={mainImageValues}
-                    />
-                </div>
-            </section>
-        );
+        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={bgImageValue} /> ];
     }
 }
 

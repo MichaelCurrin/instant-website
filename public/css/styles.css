@@ -1,54 +1,29 @@
-html,
-body {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+/* Disable Bulma shadow on card as it doesn't look good inside the modal. */
+.card {
+    box-shadow: none;
 }
 
 /*
- * Default background pattern.
- *
- * Setting it on `html` prevents a white background when the body image is rendered slowly.
+ * Set background behind the background, so that it there is something there when the background URL loads.
  * Using cyan to darkblue also works, but greyish background is best for partial image rendering.
  */
 html {
-    background-image: linear-gradient(to bottom right, #222, #eee);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, #222, #eee) center center;
+    background-size: cover;
 }
 
-/**
- *  Get paragraph to wrap by shrinking the card.
- *
- *  This can be fixed as exact width here rather than max width or percent, as the idea is the card
- *  stays constant width and the space on the side expands on a widescreen.
- *
- *  This could be changed to em or similar.
- */
-.card.is-wide {
-    width: 600px;
+#bg {
+    background-size: cover;
 }
 
-.card.has-text-centered .card-header,
-.card.has-text-centered .card-content,
-.card.has-text-centered .card-footer {
-    justify-content: center;
-    align-items: center;
+.modal-card {
+    /* Allow content to scroll inside the modal. From: https://github.com/jgthms/bulma/issues/2150 */
+    overflow: auto;
+    /* Stop the modal from obsuring the image on the side on a mobile. */
+    max-width: 80%;
 }
 
-.card.has-text-centered h1 {
-    font-size: 1.75rem;
-    font-weight: bold;
-}
-
-.card-header {
-    padding: 1.75rem 0;
-}
-
-.card-footer {
-    padding: 1rem 0;
-    border: none;
-    font-size: 0.9rem;
-    color: #808080;
+/* Override Bulma styling to stop widgets from being so wide. */
+.input {
+    width: inherit;
 }
