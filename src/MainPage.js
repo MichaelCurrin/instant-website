@@ -88,12 +88,7 @@ class MainPage extends PureComponent {
 
         const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
-        return (
-            <div>
-                <Modal displayCard={displayCard} formCard={formCard} />
-                <BgHero image={bgImageValue} />
-            </div>
-        );
+        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={bgImageValue} /> ];
     }
 }
 
