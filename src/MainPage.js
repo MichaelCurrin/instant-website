@@ -7,11 +7,7 @@ import DisplayCard from './Components/DisplayCard';
 import FormCard from './Components/FormCard';
 import Modal from './Components/Modal';
 
-const MAIN_IMG_W = 128,
-    MAIN_IMG_H = 128;
-// Based on slightly larger than a Mac Pro laptop screen.
-const BG_IMG_W = 1600,
-    BG_IMG_H = 1000;
+import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H } from './constants';
 
 /**
  * Configure URL query parameter names and types.

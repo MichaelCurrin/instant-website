@@ -1,9 +1,6 @@
 import React from 'react';
 
-// Even if you fork this repo, please leave use URL as is to link back to the original rpeo.
-const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
-// But this can be changed if you like.
-const PROJECT_TITLE = 'Instant Website';
+import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, PROJECT_TITLE } from '../constants';
 
 function DisplayCard(props) {
     const { title, subtitle, description, mainImageValues } = props;
