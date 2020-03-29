@@ -36,8 +36,8 @@ Table of contents:
 - A dynamic website based on your choices.
 - Start with a clean one-page landing page template.
 - Customize the content and styling
-    - Use a form. Custom values are pushed to the address bar.
-    - Or change values in the address bar and press enter.
+    - Use the form. Your custom values are pushed to the address bar.
+    - Or change values in the address bar and press enter. This gives more control such as picking an image keyword not in the droplists. (This also means all image choices are backwards-compatible, in case the droplist choices are changed.)
 - While you can't save your page, you can share your URL so someone else can see what you see.
 
 ### How do I use it?
