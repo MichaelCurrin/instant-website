@@ -16,6 +16,8 @@ const BG_IMG_W = 1600,
 /**
  * Configure URL query parameter names and types.
  *
+ * Note the boolean values must be passed as 1 or 0 in the URL.
+ *
  * Optionally use `queryParam: 'fooInUrl'` in the value to set custom name.
  */
 const urlPropsQueryConfig = {
@@ -23,7 +25,8 @@ const urlPropsQueryConfig = {
     subtitle: { type: UrlQueryParamTypes.string },
     description: { type: UrlQueryParamTypes.string },
     mainImage: { type: UrlQueryParamTypes.string },
-    bgImage: { type: UrlQueryParamTypes.string }
+    bgImage: { type: UrlQueryParamTypes.string },
+    showForm: { type: UrlQueryParamTypes.boolean }
 };
 
 /* URL for search using comma-separated keywords. Any random image will be returned if keywords are omitted. */
@@ -41,6 +44,7 @@ class MainPage extends PureComponent {
         description: PropTypes.string,
         mainImage: PropTypes.string,
         bgImage: PropTypes.string,
+        showForm: PropTypes.bool,
 
         // Change handlers are automatically generated and passed if a config is provided and
         // `addChangeHandlers` isn't false. They use `replaceIn` by default, just updating that
@@ -50,6 +54,7 @@ class MainPage extends PureComponent {
         onChangeDescription: PropTypes.func,
         onChangeMainImage: PropTypes.func,
         onChangeBgImage: PropTypes.func,
+        onChangeShowForm: PropTypes.func,
 
         // To change multiple values at once.
         onChangeUrlQueryParams: PropTypes.func
@@ -62,7 +67,8 @@ class MainPage extends PureComponent {
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
         mainImage: '',
-        bgImage: 'nature'
+        bgImage: 'nature',
+        showForm: true
     };
 
     render() {
@@ -72,11 +78,13 @@ class MainPage extends PureComponent {
             description,
             mainImage,
             bgImage,
+            showForm,
 
             onChangeTitle,
             onChangeDescription,
             onChangeMainImage,
             onChangeBgImage,
+            onChangeShowForm,
 
             onChangeUrlQueryParams
         } = this.props;
@@ -88,15 +96,14 @@ class MainPage extends PureComponent {
             url: mainImageUrl
         };
 
-        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
-
         const displayCard = DisplayCard({
             title: title,
             subtitle: subtitle,
             description: description,
             mainImageValues: mainImageValues
         });
-        const formCard = FormCard({});
+        const formCard = showForm ? FormCard({}) : null;
+        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         return (
             <div>
