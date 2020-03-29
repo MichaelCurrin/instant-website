@@ -62,7 +62,7 @@ class MainPage extends PureComponent {
 
         // Double the resolution of the container, to prevent blurry images.
         const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
-        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
+        const bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
 
         const displayCard = DisplayCard({
             title,
@@ -74,13 +74,13 @@ class MainPage extends PureComponent {
         var formCard;
         if (showForm === true) {
             // Pass through props. These could be defined in `FormCard` but then it has to be
-            // rewritten as a class and then used differently here.
+            // rewritten as a class and then called differently here.
             formCard = FormCard(this.props);
         } else {
             formCard = null;
         }
 
-        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={bgImageValue} /> ];
+        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={`url(${bgImageUrl})`} /> ];
     }
 }
 
