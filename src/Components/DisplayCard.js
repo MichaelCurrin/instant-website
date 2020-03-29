@@ -9,28 +9,28 @@ function DisplayCard(props) {
     const randomImages = true;
     const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
 
-    // Note that an outer div added with class="card" will add a shadow and spacing within the card.
+    // Note that an outer div added with className="card" will add a shadow and spacing within the card.
     return (
-        <div class="card">
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
+        <div className="card">
+            <div className="card-content">
+                <div className="media">
+                    <div className="media-left">
                         <figure className={`image is-${MAIN_IMG_W}x${MAIN_IMG_H}`}>
-                            <img class="is-rounded" src={mainImageUrl} alt="Small profile" />
+                            <img className="is-rounded" src={mainImageUrl} alt="Small profile" />
                         </figure>
                     </div>
 
-                    <div class="media-content">
-                        <p class="title is-4">{title}</p>
-                        <p class="subtitle is-6">{subtitle}</p>
+                    <div className="media-content">
+                        <p className="title is-4">{title}</p>
+                        <p className="subtitle is-6">{subtitle}</p>
                     </div>
                 </div>
 
-                <p class="content">{description}</p>
+                <p className="content">{description}</p>
                 <br />
 
-                <footer class="card-footer">
-                    <p class="card-footer-item">
+                <footer className="card-footer">
+                    <p className="card-footer-item">
                         <span>
                             Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
                             {refreshMsg}

@@ -80,7 +80,10 @@ class MainPage extends PureComponent {
             formCard = null;
         }
 
-        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={`url(${bgImageUrl})`} /> ];
+        return [
+            <Modal key="modal" displayCard={displayCard} formCard={formCard} />,
+            <BgHero key="bg-hero" image={`url(${bgImageUrl})`} />
+        ];
     }
 }
 
