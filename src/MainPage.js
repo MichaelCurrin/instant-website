@@ -30,24 +30,14 @@ function imageSearchUrl(keywords, w, h) {
     return `https://source.unsplash.com/${w}x${h}/?${keywords}`;
 }
 
-function setBgImgUrl(url) {
-    var result;
-    if (url) {
-        result = `url(${url})`;
-    } else {
-        result = 'inherit';
-    }
-
-    document.body.style.backgroundImage = result;
-}
-
-function Card(props) {
+function MainCard(props) {
     const { title, subtitle, description, mainImageValues } = props;
 
     // This flag can be changed later when some image URLs are deterministic.
     const randomImages = true;
     const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
 
+    // Note that an outer div added with class="card" will add a shadow and spacing within the
     return (
         <div class="card is-wide">
             <div class="card-content ">
@@ -79,6 +69,25 @@ function Card(props) {
     );
 }
 
+function Modal(props) {
+    const { cardBody } = props;
+
+    return (
+        <div class="modal is-active">
+            <div class="modal-card">
+                <header class="modal-card-head" />
+
+                <section class="modal-card-body">{cardBody}</section>
+
+                <footer class="modal-card-foot" />
+            </div>
+        </div>
+    );
+}
+
+/**
+ * Handle query params in the URL and inputs on the page and render the page.
+ */
 class MainPage extends PureComponent {
     static propTypes = {
         title: PropTypes.string,
@@ -107,7 +116,7 @@ class MainPage extends PureComponent {
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
         mainImage: '',
-        bgImage: ''
+        bgImage: 'nature'
     };
 
     render() {
@@ -126,8 +135,7 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
-        const bgImageUrl = bgImage ? imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H) : null;
-        setBgImgUrl(bgImageUrl);
+        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
         const mainImageValues = {
@@ -136,17 +144,24 @@ class MainPage extends PureComponent {
             url: mainImageUrl
         };
 
+        const cardBody = MainCard({
+            title: title,
+            subtitle: subtitle,
+            description: description,
+            mainImageValues: mainImageValues
+        });
+
         return (
-            <section>
-                <div class="container">
-                    <Card
-                        title={title}
-                        subtitle={subtitle}
-                        description={description}
-                        mainImageValues={mainImageValues}
-                    />
-                </div>
-            </section>
+            <div>
+                <Modal cardBody={cardBody} />
+                <section
+                    id="bg"
+                    class="hero is-fullheight"
+                    style={{ backgroundImage: bgImageValue }}
+                    role="img"
+                    aria-label="Random background"
+                />
+            </div>
         );
     }
 }
