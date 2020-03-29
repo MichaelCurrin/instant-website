@@ -2,9 +2,22 @@ import React from 'react';
 
 import { IMAGE_SEARCH_OPTIONS } from '../constants';
 
+/**
+ * Return an array of option components.
+ *
+ * The key attribute is used due to warnings from React.
+ */
 function mkOptions(availableChoices) {
-    var selectOptionComponents = availableChoices.map((choice) => <option value={choice}>{choice}</option>);
-    selectOptionComponents.unshift(<option value="">(random)</option>);
+    var selectOptionComponents = availableChoices.map((choice) => (
+        <option key={choice} value={choice}>
+            {choice}
+        </option>
+    ));
+    selectOptionComponents.unshift(
+        <option key="(random)" value="">
+            (random)
+        </option>
+    );
 
     return selectOptionComponents;
 }
