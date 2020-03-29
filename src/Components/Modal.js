@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * Modal component
+ *
+ * The formCard property is optional.
+ */
 function Modal(props) {
     const { displayCard, formCard } = props;
 
