@@ -86,6 +86,9 @@ See the [Remote](/docs/remote.md) doc.
 - [Usage](/docs/usage.md)
 - [Demo](/docs/demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
 
+## Development
+
+See the [Development](/docs/develpment.md) doc.
 
 ## Credits
 
