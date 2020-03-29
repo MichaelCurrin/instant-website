@@ -2,14 +2,16 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
 
+import BgHero from './Components/BgHero';
 import DisplayCard from './Components/DisplayCard';
 import FormCard from './Components/FormCard';
 import Modal from './Components/Modal';
 
 const MAIN_IMG_W = 128,
-    MAIN_IMG_H = 128,
-    BG_IMG_W = 1600,
-    BG_IMG_H = 900;
+    MAIN_IMG_H = 128;
+// Based on slightly larger than a Mac Pro laptop screen.
+const BG_IMG_W = 1600,
+    BG_IMG_H = 1000;
 
 /**
  * Configure URL query parameter names and types.
@@ -79,14 +81,14 @@ class MainPage extends PureComponent {
             onChangeUrlQueryParams
         } = this.props;
 
-        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
-
         const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W, MAIN_IMG_H);
         const mainImageValues = {
             width: MAIN_IMG_W,
             height: MAIN_IMG_H,
             url: mainImageUrl
         };
+
+        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         const displayCard = DisplayCard({
             title: title,
@@ -99,13 +101,7 @@ class MainPage extends PureComponent {
         return (
             <div>
                 <Modal displayCard={displayCard} formCard={formCard} />
-                <section
-                    id="bg"
-                    class="hero is-fullheight"
-                    style={{ backgroundImage: bgImageValue }}
-                    role="img"
-                    aria-label="Random background"
-                />
+                <BgHero image={bgImageValue} />
             </div>
         );
     }
