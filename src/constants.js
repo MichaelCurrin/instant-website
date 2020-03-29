@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 
-// Even if you fork this repo, please leave use URL as is to link back to the original rpeo.
+// Even if you fork this repo, please leave use URL as is to link back to the original repo.
+// This is used on the frontend as the link back to the Github repo.
 const REPO_URL = 'https://github.com/MichaelCurrin/instant-website';
 // But this can be changed if you like.
 const PROJECT_TITLE = 'Instant Website';
