@@ -33,6 +33,8 @@ function FormCard(props) {
                 <div id="controls">
                     <h3 class="subtitle is-3">Customize this page</h3>
 
+                    <h4 class="subtitle is-4">Choose text</h4>
+
                     <p class="help">
                         An empty field will revert to a default value, however a single empty space is allowed to make
                         it appear empty in the display.
@@ -95,6 +97,10 @@ function FormCard(props) {
                         </div>
                     </div>
 
+                    <br />
+
+                    <h4 class="subtitle is-4">Choose images</h4>
+
                     <div class="field">
                         <label class="label" for="main-image-input">
                             Main image
@@ -105,6 +111,7 @@ function FormCard(props) {
                                     {options}
                                 </select>
                             </div>
+                            <p class="help">Used for the profile image.</p>
                         </div>
                     </div>
 
