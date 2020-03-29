@@ -62,6 +62,7 @@ class MainPage extends PureComponent {
 
         // Double the resolution of the container, to prevent blurry images.
         const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
+        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         const displayCard = DisplayCard({
             title,
@@ -78,8 +79,6 @@ class MainPage extends PureComponent {
         } else {
             formCard = null;
         }
-
-        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
 
         return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={bgImageValue} /> ];
     }
