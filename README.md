@@ -100,9 +100,12 @@ See the [Remote](/docs/remote.md) doc.
     - [Modal](https://bulma.io/documentation/components/modal/) component.
     - [Hero](https://bulma.io/documentation/layout/hero/#fullheight-hero) component. Full height hero as background image, plus navbar is shown there.
 
-### React URL Query
+### Query parameter handling
 
-- [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github.
+- React URL Query library
+    - Links
+        - [pbeshai/react-url-query](https://github.com/pbeshai/react-url-query) on Github.
+        - [API reference docs](https://peterbeshai.com/react-url-query/docs/api/)
     - After I had the idea to use React to manage the state and push and pull [URL query parameter](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md) data, I soon found this project.
     - I used that project's [basic](https://github.com/pbeshai/react-url-query/tree/master/examples/basic) example as a starting point for this repo.
     - The other examples use React Router, but I didn't want to add another dependency in case it added more complexity than what it reduced, especially if I the basic one works fine without that.
