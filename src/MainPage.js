@@ -7,7 +7,7 @@ import DisplayCard from './Components/DisplayCard';
 import FormCard from './Components/FormCard';
 import Modal from './Components/Modal';
 
-import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H } from './constants';
+import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H, MAIN_PAGE_DEFAULTS } from './constants';
 
 /**
  * Configure URL query parameter names and types.
@@ -55,21 +55,14 @@ class MainPage extends PureComponent {
     };
 
     // Default values. These do not appear in the URL.
-    static defaultProps = {
-        title: 'Instant website',
-        subtitle: 'Just add inspiration',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
-        mainImage: '',
-        bgImage: 'nature',
-        showForm: true
-    };
+    static defaultProps = MAIN_PAGE_DEFAULTS;
 
     render() {
         const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;
 
         // Double the resolution of the container, to prevent blurry images.
         const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
+        const bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
 
         const displayCard = DisplayCard({
             title,
@@ -81,15 +74,13 @@ class MainPage extends PureComponent {
         var formCard;
         if (showForm === true) {
             // Pass through props. These could be defined in `FormCard` but then it has to be
-            // rewritten as a class and then used differently here.
+            // rewritten as a class and then called differently here.
             formCard = FormCard(this.props);
         } else {
             formCard = null;
         }
 
-        const bgImageValue = bgImage ? `url(${imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H)})` : 'none';
-
-        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={bgImageValue} /> ];
+        return [ <Modal displayCard={displayCard} formCard={formCard} />, <BgHero image={`url(${bgImageUrl})`} /> ];
     }
 }
 

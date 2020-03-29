@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { IMAGE_SEARCH_OPTIONS } from '../constants';
+
 function mkOptions(availableChoices) {
     var selectOptionComponents = availableChoices.map((choice) => <option value={choice}>{choice}</option>);
-    selectOptionComponents.unshift(<option value="">(default)</option>);
+    selectOptionComponents.unshift(<option value="">(random)</option>);
 
     return selectOptionComponents;
 }
@@ -24,14 +26,15 @@ function FormCard(props) {
         onChangeBgImage
     } = props;
 
-    const availableChoices = [ 'african', 'picture', 'sock', 'software', 'nature' ];
-    const options = mkOptions(availableChoices);
+    const options = mkOptions(IMAGE_SEARCH_OPTIONS);
 
     return (
         <div class="card">
             <div class="card-content">
                 <div id="controls">
                     <h3 class="subtitle is-3">Customize this page</h3>
+
+                    <h4 class="subtitle is-4">Choose text</h4>
 
                     <p class="help">
                         An empty field will revert to a default value, however a single empty space is allowed to make
@@ -95,6 +98,10 @@ function FormCard(props) {
                         </div>
                     </div>
 
+                    <br />
+
+                    <h4 class="subtitle is-4">Choose images</h4>
+
                     <div class="field">
                         <label class="label" for="main-image-input">
                             Main image
@@ -105,6 +112,7 @@ function FormCard(props) {
                                     {options}
                                 </select>
                             </div>
+                            <p class="help">Used for the profile image.</p>
                         </div>
                     </div>
 
