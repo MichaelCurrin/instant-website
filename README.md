@@ -23,9 +23,10 @@ Table of contents:
 - [Setup and run](#setup-and-run)
     - [How to run remotely](#how-to-run-remotely)
     - [How to run locally](#how-to-run-locally)
+- [Development](#development)
 - [Credits](#credits)
     - [Bulma card layout](#bulma-card-layout)
-    - [React URL Query](#react-url-query)
+    - [Query parameter handling](#query-parameter-handling)
     - [Images](#images)
 
 
@@ -85,6 +86,7 @@ See the [Remote](/docs/remote.md) doc.
 - [Installation](/docs/installation.md).
 - [Usage](/docs/usage.md)
 - [Demo](/docs/demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
+
 
 ## Development
 
