@@ -3,10 +3,10 @@
     box-shadow: none;
 }
 
-/**
+/*
  * Set background behind the background, so that it there is something there when the background URL loads.
  * Using cyan to darkblue also works, but greyish background is best for partial image rendering.
-*/
+ */
 html {
     background: linear-gradient(to bottom right, #222, #eee) center center;
     background-size: cover;
