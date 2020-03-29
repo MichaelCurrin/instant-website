@@ -1,4 +1,15 @@
 # Development
+> Notes for working on this project
+
+## Help
+
+Add help with this Bulma class:
+
+```html
+<p class="help">Message here.</p>
+```
+
+## FormCard
 
 In `FormCard`, we see that an empty value in the field forces the default property to be used.
 
