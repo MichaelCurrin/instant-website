@@ -50,8 +50,7 @@ function FormCard(props) {
                     <h4 className="subtitle is-4">Choose text</h4>
 
                     <p className="help">
-                        An empty field will revert to a default value, however a single empty space is allowed to make
-                        it appear empty in the display.
+                        Empty fields will show in the display view as defaults. To keep a field empty, use a space.
                     </p>
                     <br />
 
@@ -102,7 +101,7 @@ function FormCard(props) {
                                 className="textarea"
                                 id="description-input"
                                 name="description-input"
-                                placeholder="Enter your longer description"
+                                placeholder="Enter a description"
                                 rows="3"
                                 cols="50"
                                 value={description}
