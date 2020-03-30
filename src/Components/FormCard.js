@@ -46,7 +46,8 @@ function FormCard(props) {
                     <h4 className="subtitle is-4">Choose text</h4>
 
                     <p className="help">
-                        Empty fields will show in the display view as defaults. To keep a field empty, use a space.
+                        If a field is left empty, the site's default will be shown above. So to make a field display as
+                        empty above, use just a single space character here.
                     </p>
                     <br />
 
