@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, PROJECT_TITLE } from '../constants';
+import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, PROJECT_TITLE, MAIN_PAGE_DISPLAY_DEFAULTS } from '../constants';
 
 function DisplayCard(props) {
     const { title, subtitle, description, mainImageUrl } = props;
@@ -21,12 +21,12 @@ function DisplayCard(props) {
                     </div>
 
                     <div className="media-content">
-                        <p className="title is-4">{title}</p>
-                        <p className="subtitle is-6">{subtitle}</p>
+                        <p className="title is-4">{title || MAIN_PAGE_DISPLAY_DEFAULTS.title}</p>
+                        <p className="subtitle is-6">{subtitle || MAIN_PAGE_DISPLAY_DEFAULTS.subtitle}</p>
                     </div>
                 </div>
 
-                <p className="content">{description}</p>
+                <p className="content">{description || MAIN_PAGE_DISPLAY_DEFAULTS.description}</p>
                 <br />
 
                 <footer className="card-footer">
