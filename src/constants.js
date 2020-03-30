@@ -13,6 +13,7 @@ const MAIN_IMG_W = 128,
 const BG_IMG_W = 1600,
     BG_IMG_H = 1000;
 
+// Used for display purposes only and not in the editor.
 const MAIN_PAGE_DEFAULTS = {
     title: 'Instant website',
     subtitle: 'Just add inspiration',
