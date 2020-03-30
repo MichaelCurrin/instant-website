@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { IMAGE_SEARCH_OPTIONS } from '../constants';
-
 /**
  * Return an array of option components.
  *
@@ -38,8 +36,6 @@ function FormCard(props) {
         onChangeMainImage,
         onChangeBgImage
     } = props;
-
-    const options = mkOptions(IMAGE_SEARCH_OPTIONS);
 
     return (
         <div className="card">
@@ -119,13 +115,19 @@ function FormCard(props) {
                             Main image
                         </label>
                         <div className="control">
-                            <div className="select" id="main-image-input" name="main-image-input">
-                                <select value={mainImage} onChange={(e) => onChangeMainImage(e.target.value)}>
-                                    {options}
-                                </select>
-                            </div>
-                            <p className="help">Used for the profile image.</p>
+                            <input
+                                className="input"
+                                id="main-image-input"
+                                name="main-image-input"
+                                type="text"
+                                placeholder="Search keywords"
+                                size="30"
+                                maxLength="30"
+                                value={mainImage}
+                                onChange={(e) => onChangeMainImage(e.target.value)}
+                            />
                         </div>
+                        <p class="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
                     </div>
 
                     <div className="field">
@@ -133,12 +135,19 @@ function FormCard(props) {
                             Background image
                         </label>
                         <div className="control">
-                            <div className="select" id="bg-image-input" name="bg-image-input">
-                                <select value={bgImage} onChange={(e) => onChangeBgImage(e.target.value)}>
-                                    {options}
-                                </select>
-                            </div>
+                            <input
+                                className="input"
+                                id="bg-image-input"
+                                name="bg-image-input"
+                                type="text"
+                                placeholder="Search keywords"
+                                size="30"
+                                maxLength="30"
+                                value={bgImage}
+                                onChange={(e) => onChangeBgImage(e.target.value)}
+                            />
                         </div>
+                        <p class="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
                     </div>
                 </div>
             </div>
