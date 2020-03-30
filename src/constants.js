@@ -14,7 +14,7 @@ const BG_IMG_W = 1600,
     BG_IMG_H = 1000;
 
 // Used for display purposes only and not in the editor.
-const MAIN_PAGE_DEFAULTS = {
+const MAIN_PAGE_DISPLAY_DEFAULTS = {
     title: 'Instant website',
     subtitle: 'Just add inspiration',
     description:
@@ -31,6 +31,6 @@ module.exports = {
     MAIN_IMG_H,
     BG_IMG_W,
     BG_IMG_H,
-    MAIN_PAGE_DEFAULTS,
+    MAIN_PAGE_DISPLAY_DEFAULTS,
     IMAGE_SEARCH_OPTIONS
 };
