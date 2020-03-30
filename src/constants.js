@@ -18,10 +18,7 @@ const MAIN_PAGE_DEFAULTS = {
     title: 'Instant website',
     subtitle: 'Just add inspiration',
     description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?',
-    mainImage: '',
-    bgImage: '',
-    showForm: true
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?'
 };
 
 const imageData = require('./imageData');
