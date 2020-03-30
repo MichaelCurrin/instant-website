@@ -7,7 +7,7 @@ import DisplayCard from './Components/DisplayCard';
 import FormCard from './Components/FormCard';
 import Modal from './Components/Modal';
 
-import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H, MAIN_PAGE_DEFAULTS } from './constants';
+import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H, MAIN_PAGE_DEFAULT_PROPS } from './constants';
 
 /**
  * Configure URL query parameter names and types.
@@ -55,7 +55,7 @@ class MainPage extends PureComponent {
     };
 
     // Default values. These do not appear in the URL.
-    static defaultProps = MAIN_PAGE_DEFAULTS;
+    static defaultProps = MAIN_PAGE_DEFAULT_PROPS;
 
     render() {
         const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;

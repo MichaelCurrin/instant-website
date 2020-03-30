@@ -13,12 +13,21 @@ const MAIN_IMG_W = 128,
 const BG_IMG_W = 1600,
     BG_IMG_H = 1000;
 
-// Used to brand the homepage as this project. Used for display purposes only and not in the editor.
+// Used to brand the page if not form values are set.
 const MAIN_PAGE_DISPLAY_DEFAULTS = {
     title: 'Instant website',
     subtitle: 'Just add inspiration',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio, aut sed non ullam a iste quaerat doloremque adipisci nemo quod blanditiis deleniti necessitatibus unde quidem sit minus in labore?'
+};
+// Display overrides and form values.
+const MAIN_PAGE_DEFAULT_PROPS = {
+    title: '',
+    subtitle: '',
+    description: '',
+    mainImage: '',
+    bgImage: '',
+    showForm: true
 };
 
 const imageData = require('./imageData');
@@ -32,5 +41,6 @@ module.exports = {
     BG_IMG_W,
     BG_IMG_H,
     MAIN_PAGE_DISPLAY_DEFAULTS,
+    MAIN_PAGE_DEFAULT_PROPS,
     IMAGE_SEARCH_OPTIONS
 };
