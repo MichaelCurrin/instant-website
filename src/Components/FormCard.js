@@ -81,8 +81,8 @@ function FormCard(props) {
                                 name="subtitle-input"
                                 type="text"
                                 placeholder="Your subtitle"
-                                size="35"
-                                maxLength="35"
+                                size="45"
+                                maxLength="45"
                                 value={subtitle}
                                 onChange={(e) => onChangeSubtitle(e.target.value)}
                             />
