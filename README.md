@@ -10,7 +10,8 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
-- Project site: [instant-website.netlify.com](https://instant-website.netlify.com/)
+[![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style-for-the-badge)](https://instant-website.netlify.app/)
+
 
 Table of contents:
 
