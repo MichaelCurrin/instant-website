@@ -71,4 +71,4 @@ See the [Development](develpment.md) doc.
 
 Stock image used for free from [unsplash.com](https://unsplash.com) and loaded through their [source.unsplash.com](https://source.unsplash.com) domain.
 
-Read more [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/stock_images.md).
+Read more about Unsplash usage in this [stock images](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/web_dev/HTML/stock_images.md) guide.
