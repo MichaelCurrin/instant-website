@@ -1,4 +1,4 @@
-# Instant website
+# Instant website 🏭 ⌛ 🧙‍♂️
 > Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8f1fc5a5-1b67-4d14-94c6-512c4eacdad7/deploy-status)](https://app.netlify.com/sites/instant-website/deploys)
@@ -11,7 +11,7 @@
 
 Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
 
-[![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style-for-the-badge)](https://instant-website.netlify.app/)
+[![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style=for-the-badge)](https://instant-website.netlify.app/)
 
 
 Table of contents:
