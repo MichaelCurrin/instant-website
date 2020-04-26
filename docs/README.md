@@ -1,4 +1,4 @@
-# Instan website docs
+# Instant website docs
 
 ## Where the idea came from
 
@@ -15,6 +15,33 @@ The appearance of the site is kept simple - some text and some images, with a fi
 - [whoopi-goldbot.netlify.com](https://whoopi-goldbot.netlify.com/)
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
 - [docsify](https://docsify.js.org/#/) cover page.
+
+
+## Requirements
+
+
+| Name                        | Role                                         |
+| --------------------------- | -------------------------------------------- |
+| [Node](https://nodejs.org/) | Install and run Node packages from NPM site. |
+| [Netlify](netlify.com/)     | Optionally host the site here.               |
+
+
+## Setup and run
+
+### How to run remotely
+
+See the [Remote](remote.md) doc.
+
+### How to run locally
+
+- [Installation](installation.md).
+- [Usage](usage.md)
+- [Demo](demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
+
+
+## Development
+
+See the [Development](develpment.md) doc.
 
 
 ## Credits
