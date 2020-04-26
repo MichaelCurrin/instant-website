@@ -9,14 +9,13 @@
 [![Made with React-URL-Query](https://img.shields.io/badge/Made%20with-React%20URL%20Query-blue.svg)](https://www.npmjs.com/package/react-url-query)
 [![Made with Bulma](https://img.shields.io/badge/Made%20with-Bulma-blue.svg)](https://bulma.io/)
 
-Great for prototyping how a real or fictional business webpage could look like, within the framework of a one-page landing page template.
-
 [![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style=for-the-badge)](https://instant-website.netlify.app/)
 
 ---
 
 **Table of contents:**
 
+- [Purpose](#purpose)
 - [Features](#features)
     - [What can it do?](#what-can-it-do)
     - [How do I use it?](#how-do-i-use-it)
@@ -31,6 +30,11 @@ Great for prototyping how a real or fictional business webpage could look like, 
     - [Bulma card layout](#bulma-card-layout)
     - [Query parameter handling](#query-parameter-handling)
     - [Images](#images)
+
+
+## Purpose
+
+A simple online tool to prototype what a real or fictional app/business/organization's webpage could look like - within the framework of a clean, responsibe one-page landing page template.
 
 
 ## Features
