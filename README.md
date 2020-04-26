@@ -13,8 +13,9 @@ Great for prototyping how a real or fictional business webpage could look like, 
 
 [![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style=for-the-badge)](https://instant-website.netlify.app/)
 
+---
 
-Table of contents:
+**Table of contents:**
 
 - [Features](#features)
     - [What can it do?](#what-can-it-do)
