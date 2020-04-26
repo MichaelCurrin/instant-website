@@ -28,36 +28,16 @@ A simple online tool to prototype what a real or fictional app/business/organiza
     - Or change values in the address bar and press enter. This gives more control such as picking an image keyword not in the droplists. (This also means all image choices are backwards-compatible, in case the droplist choices are changed.)
 - While you can't save your page, you can share your URL so someone else can see what you see.
 
-### How do I use it?
+### How do I make websites with the tool?
 
 1. Use the form to customize the fields like title and background image.
 2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/web_dev/HTML/url_query_parameters.md).
 3. Use the URL to view a dynamic webpage that shows text and images based on the parameters.
-4. Share the URL with others. No data is stored in on the serve - the website exists only as the URL that you share.
+4. Share the URL with others.
+
+Note that no data is stored in on the server - the website exists only as the URL that you share.
 
 
-## Requirements
+## Documentation
 
-
-| Name                        | Role                                         |
-| --------------------------- | -------------------------------------------- |
-| [Node](https://nodejs.org/) | Install and run Node packages from NPM site. |
-| [Netlify](netlify.com/)     | Optionally host the site here.               |
-
-
-## Setup and run
-
-### How to run remotely
-
-See the [Remote](/docs/remote.md) doc.
-
-### How to run locally
-
-- [Installation](/docs/installation.md).
-- [Usage](/docs/usage.md)
-- [Demo](/docs/demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
-
-
-## Development
-
-See the [Development](/docs/develpment.md) doc.
+See the [docs](/docs) for more details and instructions on how to setup locally or on a remote environment.
