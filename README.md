@@ -11,26 +11,6 @@
 
 [![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style=for-the-badge)](https://instant-website.netlify.app/)
 
----
-
-**Table of contents:**
-
-- [Purpose](#purpose)
-- [Features](#features)
-    - [What can it do?](#what-can-it-do)
-    - [How do I use it?](#how-do-i-use-it)
-- [Purpose and background](#purpose-and-background)
-    - [Inspiration for design](#inspiration-for-design)
-- [Requirements](#requirements)
-- [Setup and run](#setup-and-run)
-    - [How to run remotely](#how-to-run-remotely)
-    - [How to run locally](#how-to-run-locally)
-- [Development](#development)
-- [Credits](#credits)
-    - [Bulma card layout](#bulma-card-layout)
-    - [Query parameter handling](#query-parameter-handling)
-    - [Images](#images)
-
 
 ## Purpose
 
@@ -50,27 +30,10 @@ A simple online tool to prototype what a real or fictional app/business/organiza
 
 ### How do I use it?
 
-1. Choose your fields (title, background image, etc.) using a form tool.
-2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/Web%20dev/HTML/url_query_parameters.md).
-3. Use the URL to view a dynamic webpage which adapts to your values and changes the text and images to match it.
-4. Share the URL with others.
-
-
-## Purpose and background
-
-I was frustrated at the time it takes to create a new website on a whim. I had a flow using a base HTML page or a Jekyll site which a config, but I wanted it to be faster.
-
-Then I realized that a single website can look however I wish it within seconds by using _JavaScript_ to make it dynamic.
-
-So I found a way to build a webpage in the browser, using a template page I created and some URL query parameters to configure it. For ease of use over editing the URL directly, I added a form input which generates the page and the URL. An easy do this is with React.
-
-The appearance of the site is kept simple - some text and some images, with a fixed layout.
-
-### Inspiration for design
-
-- [whoopi-goldbot.netlify.com](https://whoopi-goldbot.netlify.com/)
-- [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
-- [docsify](https://docsify.js.org/#/) cover page.
+1. Use the form to customize the fields like title and background image.
+2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/web_dev/HTML/url_query_parameters.md).
+3. Use the URL to view a dynamic webpage that shows text and images based on the parameters.
+4. Share the URL with others. No data is stored in on the serve - the website exists only as the URL that you share.
 
 
 ## Requirements
@@ -98,6 +61,7 @@ See the [Remote](/docs/remote.md) doc.
 ## Development
 
 See the [Development](/docs/develpment.md) doc.
+
 
 ## Credits
 
