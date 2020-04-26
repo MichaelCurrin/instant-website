@@ -9,6 +9,8 @@
 [![Made with React-URL-Query](https://img.shields.io/badge/Made%20with-React%20URL%20Query-blue.svg)](https://www.npmjs.com/package/react-url-query)
 [![Made with Bulma](https://img.shields.io/badge/Made%20with-Bulma-blue.svg)](https://bulma.io/)
 
+## Project website
+
 [![Site link](https://img.shields.io/badge/site-Instant_Website-green.svg?style=for-the-badge)](https://instant-website.netlify.app/)
 
 
@@ -17,18 +19,7 @@
 A simple online tool to prototype what a real or fictional app/business/organization's webpage could look like - within the framework of a clean, responsibe one-page landing page template.
 
 
-## Features
-
-### What can it do?
-
-- A dynamic website based on your choices.
-- Start with a clean one-page landing page template.
-- Customize the content and styling
-    - Use the form. Your custom values are pushed to the address bar.
-    - Or change values in the address bar and press enter. This gives more control such as picking an image keyword not in the droplists. (This also means all image choices are backwards-compatible, in case the droplist choices are changed.)
-- While you can't save your page, you can share your URL so someone else can see what you see.
-
-### How do I make websites with the tool?
+## How do I use the tool?
 
 1. Use the form to customize the fields like title and background image.
 2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/web_dev/HTML/url_query_parameters.md).
@@ -36,6 +27,16 @@ A simple online tool to prototype what a real or fictional app/business/organiza
 4. Share the URL with others.
 
 Note that no data is stored in on the server - the website exists only as the URL that you share.
+
+
+## Features
+
+- A dynamic website based on your choices.
+- Start with a clean one-page landing page template.
+- Customize the content and styling
+    - Use the form. Your custom values are pushed to the address bar.
+    - Or change values in the address bar and press enter. This gives more control such as picking an image keyword not in the droplists. (This also means all image choices are backwards-compatible, in case the droplist choices are changed.)
+- While you can't save your page, you can share your URL so someone else can see what you see.
 
 
 ## Documentation
