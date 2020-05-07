@@ -4,9 +4,9 @@
 
 ## System dependencies
 
-Install NodeJS using instructions [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Scripting%20languages/JavaScript/node.md)
+Install NodeJS using instructions [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/scripting_languages/JavaScript/node.md)
 
-That install will include [NPM](https://github.com/MichaelCurrin/learn-to-code/blob/master/Scripting%20languages/JavaScript/node_packages.md), which is used below.
+That install will include [NPM](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/scripting_languages/JavaScript/node_packages.md), which is used below.
 
 
 ## Project dependencies
