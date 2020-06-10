@@ -17,7 +17,13 @@
 
 ## Purpose
 
-A simple online tool to prototype what a real or fictional app/business/organization's webpage could look like - within the framework of a clean, responsibe one-page landing page template. Go wild with authentic or unlikely combinations of words and multiple images.
+A simple online tool to prototype what a real or fictional app/business/organization's webpage could look like - within the framework of a clean, responsibe one-page landing page template. 
+
+Go wild with authentic or unlikely combinations of words and multiple images.
+
+### When I would use this
+
+This is a fun experimental project for myself and friends to play with. The idea is that I am out somewhere and someone says - I have an idea for a business around something such as clowns and dragons, or say Facebook for dogs. And then I use Instant Website to create a believable title and description and choose image keywords. Then the webpage is generated instantly on my phone and I can say "Look it already exists!". Or less about a joke, someone can request to see a photo about a topic and I can make one in seconds or if them the homepage and say "Make one yourself, it's easy!"
 
 <!--
 Generate a custom landing page using form input. Nothing is persisted - your page lives only in the URL which is shareable.
@@ -58,4 +64,19 @@ Note that no data is stored in on the server - the website exists only as the UR
 
 ## Documentation
 
-See the [docs](/docs) for more details and instructions on how to setup locally or on a remote environment.
+See the [docs](/docs) directory to setup locally or on a remote environment.
+
+If you make a PR against this repo, you'll get a Netlify preview URL so you can preview the result on the existing Netlify app.
+
+
+## License
+
+Released under [MIT](/LICENSE).
+
+You must include a copy of the source license in your own repo if you use a substantial part of the code - if you copy a few lines here or there or just take inspiration then you don't need to worry but please still give credit back to this project.
+
+If forking as a separate project (not to contribute), please copy `LICENSE` to `LICENSE-source` to keep the original license and then you can add your own `LICENSE` file.
+
+This project was created for hobby use for myself and friends and people who stumble on it to play with and prototype with. This is not intended to be used for commercial use. You may fork this project and use some or all of it, but you give credit in your docs and on the site to link back to the original Instant Website repo.
+
+It's my first React app so the React might not be so good but hopefully you can find parts you can reuse in your own app such as forms or query parameters or pullin in a random image.
