@@ -21,12 +21,13 @@
         "react-scripts": "^0.6.1"
     },
     "dependencies": {
+        "bulma": "^0.8.0",
         "history": "^4.2.0",
         "prop-types": "^15.5.9",
         "react": "^16.1.1",
         "react-dom": "^16.1.1",
-        "react-url-query": "^1",
-        "bulma": "^0.8.0"
+        "react-router-dom": "^5.2.0",
+        "react-url-query": "^1"
     },
     "scripts": {
         "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
