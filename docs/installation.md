@@ -13,13 +13,13 @@ That install will include [NPM](https://github.com/MichaelCurrin/learn-to-code/b
 
 Navigate to the project root.
 
-Install project dependencies.
+Install project dependencies from [package.json](/package.json).
 
 ```sh
 $ npm install
 ```
 
-Highlights are:
+Here are some highlights and their purpose:
 
-- [React URL Query](https://www.npmjs.com/package/react-url-query)
-- [Bulma](https://bulma.io/)
+- [React URL Query](https://www.npmjs.com/package/react-url-query) - Allow sending and receiving params between the address bar and the state, so form values appear in the URL.
+- [Bulma](https://bulma.io/) - CSS framework for styling.
