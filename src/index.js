@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { configureUrlQuery } from 'react-url-query';
+import { QueryParamProvider } from 'use-query-params';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import './index.css'
 
 import App from './App';
-import history from './history';
+import store from './app/store';
 
-// Link the history used in our app to url-query so it can update the URL with it.
-configureUrlQuery({ history });
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <Router>
+      <QueryParamProvider ReactRouterRoute={Route}>
+        <App />
+      </QueryParamProvider>
+    </Router>
+  </Provider>
+  ,
+  document.getElementById('root')
+);
