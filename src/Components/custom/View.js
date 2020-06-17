@@ -9,7 +9,6 @@ const View = props => {
   const subtitle = useSelector(state => state.customWebsiteData.subtitle)
   const description = useSelector(state => state.customWebsiteData.description)
   const mainImageUrl = useSelector(state => state.customWebsiteData.mainImageUrl)
-  const bgImageUrl = useSelector(state => state.customWebsiteData.bgImageUrl)
 
   // This flag can be changed later when some image URLs are deterministic.
   const randomImages = true;
