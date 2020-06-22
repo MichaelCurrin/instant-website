@@ -13,8 +13,7 @@ const App = () => {
       <Header />
       <div style={{ flexGrow: 1, position: 'relative' }}>
         <Switch>
-          <Route exact path='/'><Redirect to='/home' /></Route>
-          <Route path='/home'><Home /></Route>
+          <Route exact path='/'><Home /></Route>
           <Route path='/custom'><Custom /></Route>
           <Route path='/showcase'><Showcase /></Route>
           <Route path='/about'><About /></Route>

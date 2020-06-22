@@ -16,7 +16,7 @@ const Header = () => {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <Link className="navbar-item" to='/home'>Home</Link>
+          <Link className="navbar-item" to='/'>Home</Link>
           <Link className="navbar-item" to='/custom?edit=0' >Custom</Link>
           <Link className="navbar-item" to='/showcase' >Showcase</Link>
           <Link className="navbar-item" to='/about' >About</Link>
