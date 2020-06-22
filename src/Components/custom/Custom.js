@@ -26,15 +26,15 @@ const Custom = () => {
     if(mainImageParam.length > 0) dispatch(mainImageKeywordsChanged(mainImageParam.join(',')))
     if(bgImageParam.length > 0) dispatch(bgImageKeywordsChanged(bgImageParam.join(',')))
 
-    if(typeof editParam === 'number') console.log('redux state updated from editParam')    
-    if(titleParam) console.log('redux state updated from titleParam')
-    if(subtitleParam) console.log('redux state updated from subtitleParam')
-    if(descriptionParam) console.log('redux state updated from descriptionParam')
-    if(mainImageParam.length > 0) console.log('redux state updated from mainImageParam')
-    if(bgImageParam.length > 0) console.log('redux state updated from bgImageParam')
+    if(typeof editParam === 'number') console.debug('redux state updated from editParam')    
+    if(titleParam) console.debug('redux state updated from titleParam')
+    if(subtitleParam) console.debug('redux state updated from subtitleParam')
+    if(descriptionParam) console.debug('redux state updated from descriptionParam')
+    if(mainImageParam.length > 0) console.debug('redux state updated from mainImageParam')
+    if(bgImageParam.length > 0) console.debug('redux state updated from bgImageParam')
   }, [])
 
-  console.log(bgImageUrl)
+  console.debug(bgImageUrl)
   return (
     <div style={{ width: '100%', height: '100%', position: 'absolute', overflow: 'auto', backgroundImage: `url(${bgImageUrl})` }}>
       <div className='container' style={{ margin: '2rem 10rem' }} >
