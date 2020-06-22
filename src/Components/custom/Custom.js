@@ -19,7 +19,10 @@ const Custom = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    if(typeof editParam === 'number') dispatch(isDataBeingEditedUpdated(editParam == 1 ? true : false))    
+    if(typeof editParam === 'number') {
+      if(editParam === 1) dispatch(isDataBeingEditedUpdated(true))
+      else dispatch(isDataBeingEditedUpdated(false)) 
+    }
     if(titleParam) dispatch(titleUpdated(titleParam))
     if(subtitleParam) dispatch(subtitleUpdated(subtitleParam))
     if(descriptionParam) dispatch(descriptionUpdated(descriptionParam))
