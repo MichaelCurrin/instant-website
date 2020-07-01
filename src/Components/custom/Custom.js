@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useQueryParam, NumberParam, StringParam, ArrayParam, withDefault } from 'use-query-params';
 import View from './View';
 import Edit from './Edit';
