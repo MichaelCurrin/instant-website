@@ -40,19 +40,26 @@ const Custom = () => {
   console.debug(bgImageUrl)
   return (
     <div style={{ width: '100%', height: '100%', position: 'absolute', overflow: 'auto', backgroundImage: `url(${bgImageUrl})` }}>
-      <div className='container' style={{ margin: '2rem 10rem' }} >
-        {edit === false ? (
-          <View changeEditParam={setEditParam} /> 
-        ) : (
-          <Edit 
-            changeEditParam={setEditParam}
-            changeTitleParam={setTitle}
-            changeSubtitleParam={setSubtitle}
-            changeDescriptionParam={setDescription}
-            changeMainImageParam={setMainImage}
-            changeBgImageParam={setBgImage} />
-        )}
+      <div className='columns'>
+        <div className='column'></div>
+        <div className='column'>
+          <div className='container' style={{ margin: '2rem 1rem' }}>
+            {edit === false ? (
+              <View changeEditParam={setEditParam} /> 
+            ) : (
+              <Edit 
+                changeEditParam={setEditParam}
+                changeTitleParam={setTitle}
+                changeSubtitleParam={setSubtitle}
+                changeDescriptionParam={setDescription}
+                changeMainImageParam={setMainImage}
+                changeBgImageParam={setBgImage} />
+            )}
+          </div>
+        </div>
+        <div className='column'></div>
       </div>
+      
     </div>
   );
 };
