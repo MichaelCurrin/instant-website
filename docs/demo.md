@@ -7,17 +7,15 @@ The demo app can be viewed locally without installing packages. This can be usef
 
 Clone the repo locally then continue below.
 
-This demo is based around the [static_demos](/static_demos/) directory.
+This demo is based around the [static_demos](https://github.com/MichaelCurrin/instant-website/tree/master/static_demos) directory.
 
+## Use VS Code's Live Server
 
-## Use VS Code server
-
-If you use VS Code, open the project in VS Code and start the _Live Server_ extension.
+If you use VS Code, open the project in VS Code and start the _Live Server_ extension. You should install it if you don't have it already.
 
 Open in your browser:
 
-- http://127.0.0.1:5500/static_demos/
-
+- [http://localhost:5500/static_demos/](http://localhost:5500/static_demos/)
 
 ## Use Python server
 
@@ -27,6 +25,4 @@ Start an HTTP server using Python.
 $ (cd static_demos && python3 -m http.server 8888)
 ```
 
-Open in your browser:
-
-- http://127.0.0.1:8888/static_demos/
+- [http://localhost:8888/static_demos/](http://localhost:8888/static_demos/)
