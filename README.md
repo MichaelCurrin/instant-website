@@ -21,7 +21,7 @@
 
 [![Wiki](https://img.shields.io/badge/User_guide-Wiki-blue?style=for-the-badge)](https://github.com/MichaelCurrin/instant-website/wiki)
 
-### Dev guide
+### Dev docs
 
 See the docs site to setup locally or on a remote environment. Or just to learn how the project works using Bulma styling, React, Netlify and Unsplash.
 
@@ -32,7 +32,7 @@ See the docs site to setup locally or on a remote environment. Or just to learn 
 
 There are a lot of issues on the repo - some might never get done or make the others unneeded when a choice is made. I am happy with the how the single page site works for now and am adding to the Wiki for now to keep things simple. Please update the Wiki's [Showcase](https://github.com/MichaelCurrin/instant-website/wiki/Showcase) section with your own creations if you want to share them.
 
-If you do make a PR against this repo, you'll get a Netlify preview URL so you can **preview** your result on the existing Netlify app.
+If you do make a PR against this repo's `master` branch, you'll get a Netlify preview URL so you can **preview** your result on the existing Netlify app.
 
 
 ## License
