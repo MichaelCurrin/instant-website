@@ -14,6 +14,8 @@
 
 [![Site link](https://img.shields.io/badge/site-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
 
+See also the [Wiki](https://github.com/MichaelCurrin/instant-website/wiki) for additional content.
+
 
 ## Purpose
 
