@@ -45,7 +45,8 @@ const View = props => {
               <span>
                 Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
                 {refreshMsg}
-                <button className='button' onClick={onEditPageButtonClick}>Edit this website</button>
+                <br>
+                <button className='button' onClick={onEditPageButtonClick}>Edit this page</button>
               </span>
             </p>
           </footer>
