@@ -12,65 +12,27 @@
 
 ## Project website
 
-[![Site link](https://img.shields.io/badge/site-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
-
-See also the [Wiki](https://github.com/MichaelCurrin/instant-website/wiki) for additional content.
-
-
-## Purpose
-
-A simple online tool to prototype what a real or fictional app/business/organization's webpage could look like - within the framework of a clean, responsibe one-page landing page template. 
-
-Go wild with authentic or unlikely combinations of words and multiple images.
-
-### When I would use this
-
-This is a fun experimental project for myself and friends to play with. The idea is that I am out somewhere and someone says - I have an idea for a business around something such as clowns and dragons, or say Facebook for dogs. And then I use Instant Website to create a believable title and description and choose image keywords. Then the webpage is generated instantly on my phone and I can say "Look it already exists!". Or less about a joke, someone can request to see a photo about a topic and I can make one in seconds or if them the homepage and say "Make one yourself, it's easy!"
-
-<!--
-Generate a custom landing page using form input. Nothing is persisted - your page lives only in the URL which is shareable.
-
-Manifest a real or imaginary business/product/tool as a simple one-page webpage. Enter your custom text and enter some image keywords. No coding needed.
--->
-
-## About the tool
-
-### Features
-
-- A dynamic website based on your choices.
-- Start with a clean one-page landing page template.
-- Customize the content and styling
-    - Use the form. Your custom values are pushed to the address bar.
-    - Or change values in the address bar and press enter. This gives more control such as picking an image keyword not in the droplists. (This also means all image choices are backwards-compatible, in case the droplist choices are changed.)
-- While you can't save your page, you can share your URL so someone else can see what you see.
-
-
-### Limitations
-
-This is a hobby project for me and users so meant more for fun and experimentation than serious use.
-
-- The URL ends up being very long unless you use tinyurl.com or bit.ly to make a short URL.
-- The URL is always on the same host domain.
-- Images are randomized based on they keyword - you will get a different image on each page refresh and the image may not be what you expected. However, the  unexpected results random images from a search is meant to be part of the charm of the site.
-
-
-## How do I use the tool?
-
-1. Use the form to customize the fields like title and background image.
-2. You will get a URL with your custom values in the [query parameters](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/web_dev/HTML/url_query_parameters.md).
-3. Use the URL to view a dynamic webpage that shows text and images based on the parameters.
-4. Share the URL with others.
-
-Note that no data is stored in on the server - the website exists only as the URL that you share.
+[![Site link](https://img.shields.io/badge/web_app-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
 
 
 ## Documentation
 
-See the docs site to setup locally or on a remote environment.
+### User guide
 
-- [![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-green?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
+- [![Wiki](https://img.shields.io/badge/User_guide-Wiki-blue?style=for-the-badge)](https://github.com/MichaelCurrin/instant-website/wiki)
 
-If you make a PR against this repo, you'll get a Netlify preview URL so you can **preview** your result on the existing Netlify app.
+### Dev guide
+
+See the docs site to setup locally or on a remote environment. Or just to learn how the project works using Bulma styling, React, Netlify and Unsplash.
+
+- [![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
+
+
+## Contributing
+
+There are a lot of issues on the repo - some might never get done or make the others unneeded when a choice is made. I am happy with the how the single page site works for now and am adding to the Wiki for now to keep things simple. Please update the Wiki's [Showcase](https://github.com/MichaelCurrin/instant-website/wiki/Showcase) section with your own creations if you want to share them.
+
+If you do make a PR against this repo, you'll get a Netlify preview URL so you can **preview** your result on the existing Netlify app.
 
 
 ## License
