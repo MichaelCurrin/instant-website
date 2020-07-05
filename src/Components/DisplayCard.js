@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, PROJECT_TITLE, MAIN_PAGE_DISPLAY_DEFAULTS } from '../constants';
+import { MAIN_IMG_W, MAIN_IMG_H, REPO_URL, MAIN_PAGE_DISPLAY_DEFAULTS } from '../constants';
 
 function DisplayCard(props) {
     const { title, subtitle, description, mainImageUrl } = props;
@@ -32,7 +32,10 @@ function DisplayCard(props) {
                 <footer className="card-footer">
                     <p className="card-footer-item">
                         <span>
-                            Made with <a href={REPO_URL}>{PROJECT_TITLE}</a>
+                            View the <a href="https://github.com/MichaelCurrin/instant-website/wiki">user guide</a> for examples and terms of use
+                            <br>
+                            View <a href={REPO_URL}>repo</a> on Github
+                            <br>
                             {refreshMsg}
                         </span>
                     </p>
