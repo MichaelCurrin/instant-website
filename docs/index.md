@@ -1,12 +1,14 @@
-# Instant website docs
+# Instant Website documentation
+
+Perhaps more suitably "Instant Webpage".
 
 ## Where the idea came from
 
-I was frustrated at the time it takes to create a new website on a whim. I had a flow using a base HTML page or a Jekyll site which a config, but I wanted it to be faster.
+I was frustrated at the time it takes to create a new website on a whim. I had a flow using a base HTML page or a Jekyll site which a config, but I wanted it to be faster. And without using Wordpress or Six.
 
-Then I realized that a single website can look however I wish it within seconds by using _JavaScript_ to make it dynamic.
+Then I realized that a single website can look however I wish it within seconds by using _JavaScript_ to make it dynamic. A form makes it easy to change and a URL with parameters makes it easy to persist and share.
 
-So I found a way to build a webpage in the browser, using a template page I created and some URL query parameters to configure it. For ease of use over editing the URL directly, I added a form input which generates the page and the URL. An easy do this is with React.
+So I found a way to build a webpage in the browser, using a template page I created (without React) and some URL query parameters to configure it. For ease of use over editing the URL directly, I added a form input which generates the page and the URL. An easy do this is with React.
 
 The appearance of the site is kept simple - some text and some images, with a fixed layout.
 
