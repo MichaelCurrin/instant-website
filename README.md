@@ -19,13 +19,13 @@
 
 ### User guide
 
-- [![Wiki](https://img.shields.io/badge/User_guide-Wiki-blue?style=for-the-badge)](https://github.com/MichaelCurrin/instant-website/wiki)
+[![Wiki](https://img.shields.io/badge/User_guide-Wiki-blue?style=for-the-badge)](https://github.com/MichaelCurrin/instant-website/wiki)
 
 ### Dev guide
 
 See the docs site to setup locally or on a remote environment. Or just to learn how the project works using Bulma styling, React, Netlify and Unsplash.
 
-- [![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
+[![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
 
 
 ## Contributing
