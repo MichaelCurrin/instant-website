@@ -66,9 +66,11 @@ Note that no data is stored in on the server - the website exists only as the UR
 
 ## Documentation
 
-See the [docs](/docs) directory to setup locally or on a remote environment.
+See the docs site to setup locally or on a remote environment.
 
-If you make a PR against this repo, you'll get a Netlify preview URL so you can preview the result on the existing Netlify app.
+- [![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-green?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
+
+If you make a PR against this repo, you'll get a Netlify preview URL so you can **preview** your result on the existing Netlify app.
 
 
 ## License
