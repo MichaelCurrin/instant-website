@@ -1,6 +1,6 @@
 # Instant Website documentation
 
-Perhaps more suitably "Instant Webpage".
+Perhaps more accurately named "Instant Webpage".
 
 ## Where the idea came from
 
@@ -12,15 +12,14 @@ So I found a way to build a webpage in the browser, using a template page I crea
 
 The appearance of the site is kept simple - some text and some images, with a fixed layout.
 
-### Inspiration for design
+### Inspiration for the design
 
 - [whoopi-goldbot.netlify.com](https://whoopi-goldbot.netlify.com/)
 - [landing-page-boilerplate](https://michaelcurrin.github.io/landing-page-boilerplate/)
-- [docsify](https://docsify.js.org/#/) cover page.
+- [docsify](https://docsify.js.org/#/) cover page
 
 
 ## Requirements
-
 
 | Name                        | Role                                         |
 | --------------------------- | -------------------------------------------- |
@@ -36,7 +35,7 @@ See the [Remote](remote.md) doc.
 
 ### How to run locally
 
-- [Installation](installation.md).
+- [Installation](installation.md)
 - [Usage](usage.md)
 - [Demo](demo.md) - This focuses on rendering flat content using Bulma styling and does not use React or any other JS.
 
