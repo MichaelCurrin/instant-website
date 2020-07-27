@@ -15,6 +15,15 @@
 [![Site link](https://img.shields.io/badge/web_app-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
 
 
+## Preview
+
+<div align=center>
+    <a href="https://instant-website.netlify.app/">
+        <img src=sample.png alt="Sample screenshot" title="Sample screenshot" width="400" />
+    </a>
+</div>
+
+
 ## Documentation
 
 ### User guide
