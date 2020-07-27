@@ -19,7 +19,7 @@
 
 <div align=center>
     <a href="https://instant-website.netlify.app/">
-        <img src=sample.png alt="Sample screenshot" title="Sample screenshot" />
+        <img src=sample.png alt="Sample screenshot" title="Sample screenshot" width="500" />
     </a>
 </div>
 
