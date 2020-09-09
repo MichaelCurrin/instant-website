@@ -10,32 +10,47 @@
 [![Made with Bulma](https://img.shields.io/badge/Made%20with-Bulma-blue.svg)](https://bulma.io/)
 
 
-## Project website
-
-[![Site link](https://img.shields.io/badge/web_app-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
-
-
 ## Preview
 
-<div align=center>
+<div align="center">
     <a href="https://instant-website.netlify.app/">
         <img src=sample.png alt="Sample screenshot" title="Sample screenshot" width="500" />
     </a>
 </div>
 
 
+## Project website
+
+<div align="center">
+
+[![Site link](https://img.shields.io/badge/web_app-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
+
+</div>
+
+A simple one-page React app which lets you build a landing page for a brand using a form. And you can share the page using the URL as it has all the details in the params.
+
+This is my first React app and could do with refactoring when I get round to it but now I am just stoked to see that it works how I want and is shareable.
+
+
 ## Documentation
 
 ### User guide
 
+<div align="center">
+
 [![Wiki](https://img.shields.io/badge/User_guide-Wiki-blue?style=for-the-badge)](https://github.com/MichaelCurrin/instant-website/wiki)
+
+</div>
 
 ### Dev docs
 
 See the docs site to setup locally or on a remote environment. Or just to learn how the project works using Bulma styling, React, Netlify and Unsplash.
 
+<div align="center">
+
 [![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
 
+</div>
 
 ## Contributing
 
