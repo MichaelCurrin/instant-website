@@ -1,6 +1,8 @@
 # Instant Website documentation
 
-Perhaps more accurately named "Instant Webpage".
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://github.com/MichaelCurrin/instant-website/releases)
+
+A service which generates a webpage instantly for you based on a concept you imagine for an organization or personal website.
 
 ## Where the idea came from
 
