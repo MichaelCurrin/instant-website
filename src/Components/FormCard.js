@@ -128,7 +128,7 @@ function FormCard(props) {
                                 onChange={(e) => onChangeMainImage(e.target.value)}
                             />
                         </div>
-                        <p class="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
+                        <p className="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
                     </div>
 
                     <div className="field">
@@ -148,7 +148,7 @@ function FormCard(props) {
                                 onChange={(e) => onChangeBgImage(e.target.value)}
                             />
                         </div>
-                        <p class="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
+                        <p className="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
                     </div>
                 </div>
             </div>
