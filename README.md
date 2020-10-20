@@ -6,7 +6,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/instant-website/blob/master/LICENSE)
 
 [![Made with NodeJS](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
-[![Made with React-URL-Query](https://img.shields.io/badge/React-16-blue?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
+[![Made with React](https://img.shields.io/badge/React-16-blue?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
 [![Made with React-URL-Query](https://img.shields.io/badge/React_URL_Query-1-blue)](https://www.npmjs.com/package/react)
 [![Made with Bulma](https://img.shields.io/badge/Made_with-Bulma-blue.svg)](https://bulma.io/)
 
