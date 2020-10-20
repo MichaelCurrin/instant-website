@@ -2,7 +2,7 @@
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://github.com/MichaelCurrin/instant-website/releases)
 
-A service which generates a webpage instantly for you based on a concept you imagine for an organization or personal website.
+A service which generates a webpage instantly for you based on a concept you imagine for an organization or personal website. Nothing is saved, it is all temporary and rendered on your browser, so go wild and share a URL of what you made with friends.
 
 GitHub repo: [MichaelCurrin/instant-website](https://github.com/MichaelCurrin/instant-website)
 
