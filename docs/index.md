@@ -4,6 +4,9 @@
 
 A service which generates a webpage instantly for you based on a concept you imagine for an organization or personal website.
 
+GitHub repo: [MichaelCurrin/instant-website](https://github.com/MichaelCurrin/instant-website)
+
+
 ## Where the idea came from
 
 I was frustrated at the time it takes to create a new website on a whim. I had a flow using a base HTML page or a Jekyll site which a config, but I wanted it to be faster. And without using Wordpress or Six.
@@ -44,7 +47,7 @@ See the [Remote](remote.md) doc.
 
 ## Development
 
-See the [Development](develpment.md) doc.
+See the [Development](development.md) doc.
 
 
 ## Credits
