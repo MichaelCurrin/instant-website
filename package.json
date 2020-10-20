@@ -23,7 +23,6 @@
         "start": "npm run cp-deps && react-scripts start",
         "build": "npm run cp-deps && react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "preversion": "npm test",
         "version": "npm run build",
         "postversion": "git push --follow-tags"
     },
