@@ -18,12 +18,12 @@
         "query-strings"
     ],
     "dependencies": {
-        "history": "^4.2.0",
+        "bulma": "^0.9.1",
+        "history": "^4.10.1",
         "prop-types": "^15.5.9",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-url-query": "^1",
-        "bulma": "^0.9.1"
+        "react-url-query": "^1"
     },
     "devDependencies": {
         "react-scripts": "^0.6.1"
