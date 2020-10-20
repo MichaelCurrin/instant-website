@@ -7,7 +7,7 @@ function DisplayCard(props) {
 
     // This flag can be changed later when some image URLs are deterministic.
     const randomImages = true;
-    const refreshMsg = randomImages ? ' - Refresh this page to pick random images.' : '';
+    const refreshMsg = randomImages ? 'Refresh this page to pick random images.' : '';
 
     // Note that an outer div added with className="card" will add a shadow and spacing within the card.
     return (
