@@ -5,9 +5,9 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://github.com/MichaelCurrin/instant-website/releases)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/instant-website/blob/master/LICENSE)
 
-[![Made with NodeJS](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
-[![Made with React](https://img.shields.io/badge/React-16-blue?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
-[![Made with React-URL-Query](https://img.shields.io/badge/React_URL_Query-1-blue)](https://www.npmjs.com/package/react)
+[![Made with Node.js](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Package - react](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react?logo=react&logoColor=white)](https://www.npmjs.com/package/react)
+[![Package - react-url-query](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react-url-query?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
 [![Made with Bulma](https://img.shields.io/badge/Made_with-Bulma-blue.svg)](https://bulma.io/)
 
 
@@ -24,7 +24,7 @@
 
 <div align="center">
 
-[![Site link](https://img.shields.io/badge/web_app-Instant_Website-green?style=for-the-badge)](https://instant-website.netlify.app/)
+[![Site link](https://img.shields.io/badge/web_app-Instant_Website-2ea44f?style=for-the-badge)](https://instant-website.netlify.app/)
 
 </div>
 
@@ -62,7 +62,7 @@ If you do make a PR against this repo's `master` branch, you'll get a Netlify pr
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 
 You must include a copy of the source license in your own repo if you use a substantial part of the code - if you copy a few lines here or there or just take inspiration then you don't need to worry but please still give credit back to this project.
 
