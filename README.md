@@ -6,8 +6,8 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/instant-website/blob/master/LICENSE)
 
 [![Made with Node.js](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
-[![Package - react](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react?logo=react&logoColor=white)](https://www.npmjs.com/package/react)
 
+[![Package - react](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react?logo=react&logoColor=white)](https://www.npmjs.com/package/react)
 [![Package - react-url-query](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react-url-query?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
 [![Made with Bulma](https://img.shields.io/badge/Made_with-Bulma-blue.svg)](https://bulma.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/instant-website/badge.svg?targetFile=package.json)](https://snyk.io/test/github/MichaelCurrin/instant-website?targetFile=package.json)
