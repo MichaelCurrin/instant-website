@@ -1,40 +1,40 @@
 {
-    "name": "instant-website",
-    "description": "Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding",
-    "version": "0.7.0",
-    "author": {
-        "name": "Michael Currin",
-        "url": "https://MichaelCurrin.github.io/"
-    },
-    "license": "MIT",
-    "homepage": "https://instant-website.netlify.com",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/MichaelCurrin/instant-website.git"
-    },
-    "keywords": [
-        "react",
-        "react-url-query",
-        "unsplash",
-        "query-strings"
-    ],
-    "scripts": {
-        "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
-        "start": "npm run cp-deps && react-scripts start",
-        "build": "npm run cp-deps && react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "version": "npm run build",
-        "postversion": "git push --follow-tags"
-    },
-    "dependencies": {
-        "bulma": "^0.9.1",
-        "history": "^4.10.1",
-        "prop-types": "^15.5.9",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-url-query": "^1"
-    },
-    "devDependencies": {
-        "react-scripts": "^0.6.1"
-    }
+  "name": "instant-website",
+  "description": "Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding",
+  "version": "0.7.0",
+  "author": {
+    "name": "Michael Currin",
+    "url": "https://MichaelCurrin.github.io/"
+  },
+  "license": "MIT",
+  "homepage": "https://instant-website.netlify.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelCurrin/instant-website.git"
+  },
+  "keywords": [
+    "react",
+    "react-url-query",
+    "unsplash",
+    "query-strings"
+  ],
+  "scripts": {
+    "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
+    "start": "npm run cp-deps && react-scripts start",
+    "build": "npm run cp-deps && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "version": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "history": "^4.10.1",
+    "prop-types": "^15.5.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-url-query": "^1"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.6.1"
+  }
 }

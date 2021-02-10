@@ -1,13 +1,11 @@
-import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
-
 import BgHero from './components/BgHero';
 import DisplayCard from './components/DisplayCard';
 import FormCard from './components/FormCard';
 import Modal from './components/Modal';
-
-import { MAIN_IMG_W, MAIN_IMG_H, BG_IMG_W, BG_IMG_H, MAIN_PAGE_DEFAULT_PROPS } from './constants';
+import { BG_IMG_H, BG_IMG_W, MAIN_IMG_H, MAIN_IMG_W, MAIN_PAGE_DEFAULT_PROPS } from './constants';
 
 /**
  * Configure URL query parameter names and types.

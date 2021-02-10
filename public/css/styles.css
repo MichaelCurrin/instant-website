@@ -1,6 +1,6 @@
 /* Disable Bulma shadow on card as it doesn't look good inside the modal. */
 .card {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 /*
@@ -8,22 +8,22 @@
  * Using cyan to darkblue also works, but greyish background is best for partial image rendering.
  */
 html {
-    background: linear-gradient(to bottom right, #222, #eee) center center;
-    background-size: cover;
+  background: linear-gradient(to bottom right, #222, #eee) center center;
+  background-size: cover;
 }
 
 #bg {
-    background-size: cover;
+  background-size: cover;
 }
 
 .modal-card {
-    /* Allow content to scroll inside the modal. From: https://github.com/jgthms/bulma/issues/2150 */
-    overflow: auto;
-    /* Stop the modal from obsuring the image on the side on a mobile. */
-    max-width: 80%;
+  /* Allow content to scroll inside the modal. From: https://github.com/jgthms/bulma/issues/2150 */
+  overflow: auto;
+  /* Stop the modal from obsuring the image on the side on a mobile. */
+  max-width: 80%;
 }
 
 /* Override Bulma styling to stop widgets from being so wide. */
 .input {
-    width: inherit;
+  width: inherit;
 }
