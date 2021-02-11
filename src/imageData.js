@@ -21,4 +21,4 @@ export const KEYWORD_SEARCHES = [
   "textures-patterns",
   "travel",
   "work",
-]
+];
