@@ -30,9 +30,6 @@ const MAIN_PAGE_DEFAULT_PROPS = {
   showForm: true,
 };
 
-const imageData = require("./imageData");
-const IMAGE_SEARCH_OPTIONS = imageData.keyword_searches;
-
 module.exports = {
   REPO_URL,
   PROJECT_TITLE,
@@ -42,5 +39,4 @@ module.exports = {
   BG_IMG_H,
   MAIN_PAGE_DISPLAY_DEFAULTS,
   MAIN_PAGE_DEFAULT_PROPS,
-  IMAGE_SEARCH_OPTIONS,
 };
