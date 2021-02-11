@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// TODO: Replace deprecated call
 import { configureUrlQuery } from 'react-url-query';
 import App from './App';
 import history from './history';
