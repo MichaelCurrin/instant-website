@@ -1,4 +1,4 @@
-const createHistory = require('history').createBrowserHistory;
+const createHistory = require("history").createBrowserHistory;
 
 const history = createHistory();
 

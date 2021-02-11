@@ -1,11 +1,17 @@
-import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
-import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
-import BgHero from './components/BgHero';
-import DisplayCard from './components/DisplayCard';
-import FormCard from './components/FormCard';
-import Modal from './components/Modal';
-import { BG_IMG_H, BG_IMG_W, MAIN_IMG_H, MAIN_IMG_W, MAIN_PAGE_DEFAULT_PROPS } from './constants';
+import PropTypes from "prop-types";
+import React, { PureComponent } from "react";
+import { addUrlProps, UrlQueryParamTypes } from "react-url-query";
+import BgHero from "./components/BgHero";
+import DisplayCard from "./components/DisplayCard";
+import FormCard from "./components/FormCard";
+import Modal from "./components/Modal";
+import {
+  BG_IMG_H,
+  BG_IMG_W,
+  MAIN_IMG_H,
+  MAIN_IMG_W,
+  MAIN_PAGE_DEFAULT_PROPS,
+} from "./constants";
 
 /**
  * Configure URL query parameter names and types.
@@ -20,7 +26,7 @@ const urlPropsQueryConfig = {
   description: { type: UrlQueryParamTypes.string },
   mainImage: { type: UrlQueryParamTypes.string },
   bgImage: { type: UrlQueryParamTypes.string },
-  showForm: { type: UrlQueryParamTypes.boolean }
+  showForm: { type: UrlQueryParamTypes.boolean },
 };
 
 /* URL for search using comma-separated keywords. Any random image will be returned if keywords are omitted. */
@@ -49,24 +55,29 @@ class MainPage extends PureComponent {
     onChangeDescription: PropTypes.func,
 
     onChangeMainImage: PropTypes.func,
-    onChangeBgImage: PropTypes.func
+    onChangeBgImage: PropTypes.func,
   };
 
   // Default values. These do not appear in the URL.
   static defaultProps = MAIN_PAGE_DEFAULT_PROPS;
 
   render() {
-    const { title, subtitle, description, mainImage, bgImage, showForm } = this.props;
+    const { title, subtitle, description, mainImage, bgImage, showForm } =
+      this.props;
 
     // Double the resolution of the container, to prevent blurry images.
-    const mainImageUrl = imageSearchUrl(mainImage, MAIN_IMG_W * 2, MAIN_IMG_H * 2);
+    const mainImageUrl = imageSearchUrl(
+      mainImage,
+      MAIN_IMG_W * 2,
+      MAIN_IMG_H * 2,
+    );
     const bgImageUrl = imageSearchUrl(bgImage, BG_IMG_W, BG_IMG_H);
 
     const displayCard = DisplayCard({
       title,
       subtitle,
       description,
-      mainImageUrl
+      mainImageUrl,
     });
 
     var formCard;
@@ -80,7 +91,7 @@ class MainPage extends PureComponent {
 
     return [
       <Modal key="modal" displayCard={displayCard} formCard={formCard} />,
-      <BgHero key="bg-hero" image={`url(${bgImageUrl})`} />
+      <BgHero key="bg-hero" image={`url(${bgImageUrl})`} />,
     ];
   }
 }

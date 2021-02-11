@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import history from './history';
-import MainPage from './MainPage';
+import React, { Component } from "react";
+import history from "./history";
+import MainPage from "./MainPage";
 
 class App extends Component {
   componentDidMount() {

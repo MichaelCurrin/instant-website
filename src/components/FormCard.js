@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  * Return an array of option components.
@@ -14,7 +14,7 @@ function mkOptions(availableChoices) {
   selectOptionComponents.unshift(
     <option key="(random)" value="">
       (random)
-        </option>
+    </option>,
   );
 
   return selectOptionComponents;
@@ -34,7 +34,7 @@ function FormCard(props) {
     onChangeSubtitle,
     onChangeDescription,
     onChangeMainImage,
-    onChangeBgImage
+    onChangeBgImage,
   } = props;
 
   return (
@@ -46,15 +46,16 @@ function FormCard(props) {
           <h4 className="subtitle is-4">Choose text</h4>
 
           <p className="help">
-            If a field is left empty, the site's default will be shown above. So to make a field display as
-            empty above, use just a single space character here.
-                    </p>
+            If a field is left empty, the site's default will be shown above. So
+            to make a field display as empty above, use just a single space
+            character here.
+          </p>
           <br />
 
           <div className="field">
             <label className="label" htmlFor="title-input">
               Title
-                        </label>
+            </label>
             <div className="control">
               <input
                 className="input"
@@ -73,7 +74,7 @@ function FormCard(props) {
           <div className="field">
             <label className="label" htmlFor="subtitle-input">
               Subtitle
-                        </label>
+            </label>
             <div className="control">
               <input
                 className="input"
@@ -92,7 +93,7 @@ function FormCard(props) {
           <div className="field">
             <label className="label" htmlFor="description-input">
               Description
-                        </label>
+            </label>
             <div className="control">
               <textarea
                 className="textarea"
@@ -114,7 +115,7 @@ function FormCard(props) {
           <div className="field">
             <label className="label" htmlFor="main-image-input">
               Main image
-                        </label>
+            </label>
             <div className="control">
               <input
                 className="input"
@@ -128,13 +129,16 @@ function FormCard(props) {
                 onChange={(e) => onChangeMainImage(e.target.value)}
               />
             </div>
-            <p className="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
+            <p className="help">
+              Use one or more lower-case terms. Separate with commas and no
+              spaces.
+            </p>
           </div>
 
           <div className="field">
             <label className="label" htmlFor="bg-image-input">
               Background image
-                        </label>
+            </label>
             <div className="control">
               <input
                 className="input"
@@ -148,7 +152,10 @@ function FormCard(props) {
                 onChange={(e) => onChangeBgImage(e.target.value)}
               />
             </div>
-            <p className="help">Use one or more lower-case terms. Separate with commas and no spaces.</p>
+            <p className="help">
+              Use one or more lower-case terms. Separate with commas and no
+              spaces.
+            </p>
           </div>
         </div>
       </div>

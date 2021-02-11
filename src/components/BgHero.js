@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function BgHero(props) {
   const { image } = props;
   const style = { backgroundImage: image };
 
-  return <section id="bg" className="hero is-fullheight" style={style} role="img" aria-label="Random background" />;
+  return <section
+    id="bg"
+    className="hero is-fullheight"
+    style={style}
+    role="img"
+    aria-label="Random background"
+  />;
 }
 
 export default BgHero;
