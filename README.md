@@ -51,9 +51,10 @@ See the docs site to setup locally or on a remote environment. Or just to learn 
 
 <div align="center">
 
-[![View site GH Pages](https://img.shields.io/badge/Online_docs-GH_Pages-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
+[![View site](https://img.shields.io/badge/View-Online_docs-blue?style=for-the-badge)](https://MichaelCurrin.github.io/instant-website/)
 
 </div>
+
 
 ## Contributing
 
