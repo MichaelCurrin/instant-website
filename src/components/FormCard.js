@@ -14,7 +14,7 @@ function mkOptions(availableChoices) {
   selectOptionComponents.unshift(
     <option key="(random)" value="">
       (random)
-    </option>,
+    </option>
   );
 
   return selectOptionComponents;

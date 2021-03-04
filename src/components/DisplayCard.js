@@ -48,11 +48,11 @@ function DisplayCard(props) {
         <footer className="card-footer">
           <p className="card-footer-item">
             <span>
-              View the <a
-                href="https://github.com/MichaelCurrin/instant-website/wiki"
-              >
+              View the{" "}
+              <a href="https://github.com/MichaelCurrin/instant-website/wiki">
                 user guide
-              </a> for examples and terms of use
+              </a>{" "}
+              for examples and terms of use
               <br />
               View <a href={REPO_URL}>repo</a> on Github
               <br />
