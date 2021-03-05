@@ -2,10 +2,11 @@
   "name": "instant-website",
   "version": "0.7.0",
   "scripts": {
+    "fmt": "npx prettier -w src",
+    "test": "react-scripts test --env=jsdom",
     "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
     "start": "npm run cp-deps && react-scripts start",
     "build": "npm run cp-deps && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "version": "npm run build",
     "postversion": "git push --follow-tags"
   },
@@ -26,7 +27,7 @@
     "url": "https://MichaelCurrin.github.io/"
   },
   "license": "MIT",
-  "homepage": "https://instant-website.netlify.com",
+  "homepage": "https://instant-website.netlify.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/MichaelCurrin/instant-website.git"
