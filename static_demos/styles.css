@@ -33,9 +33,9 @@ body {
 }
 
 /* This breaks use of small media image in a card so is disabled. */
-.card-content {
-  /* padding: 3.5rem 0; */
-}
+/* .card-content {
+  padding: 3.5rem 0;
+} */
 
 .card-footer {
   padding: 1rem 0;
