@@ -5,20 +5,20 @@ import React from "react";
  *
  * The key attribute is used due to warnings from React.
  */
-function mkOptions(availableChoices) {
-  var selectOptionComponents = availableChoices.map((choice) => (
-    <option key={choice} value={choice}>
-      {choice}
-    </option>
-  ));
-  selectOptionComponents.unshift(
-    <option key="(random)" value="">
-      (random)
-    </option>
-  );
+// function mkOptions(availableChoices) {
+//   var selectOptionComponents = availableChoices.map((choice) => (
+//     <option key={choice} value={choice}>
+//       {choice}
+//     </option>
+//   ));
+//   selectOptionComponents.unshift(
+//     <option key="(random)" value="">
+//       (random)
+//     </option>
+//   );
 
-  return selectOptionComponents;
-}
+//   return selectOptionComponents;
+// }
 
 /**
  * Render a Bulma-styled card component.
