@@ -3,7 +3,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8f1fc5a5-1b67-4d14-94c6-512c4eacdad7/deploy-status)](https://app.netlify.com/sites/instant-website/deploys)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://github.com/MichaelCurrin/instant-website/releases)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/instant-website/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with Node.js](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
 
