@@ -19,7 +19,7 @@
     "react-url-query": "^1.5.0"
   },
   "devDependencies": {
-    "react-scripts": "^0.6.1"
+    "react-scripts": "^4.0.3"
   },
   "description": "Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding",
   "author": {
