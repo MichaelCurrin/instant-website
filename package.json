@@ -21,7 +21,6 @@
   "devDependencies": {
     "react-scripts": "^4.0.3"
   },
-  "description": "Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding",
   "author": {
     "name": "Michael Currin",
     "url": "https://MichaelCurrin.github.io/"
