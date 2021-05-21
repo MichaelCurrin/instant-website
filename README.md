@@ -13,6 +13,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/instant-website/badge.svg?targetFile=package.json)](https://snyk.io/test/github/MichaelCurrin/instant-website?targetFile=package.json)
 
 
+Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding
+
 ## Preview
 
 <div align="center">
