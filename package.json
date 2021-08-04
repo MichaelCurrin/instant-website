@@ -5,6 +5,7 @@
     "fmt:check": "npx prettier -c src",
     "fmt:fix": "npx prettier -w src",
     "test": "react-scripts test --env=jsdom",
+    "test:all": "react-scripts test --env=jsdom --watchAll=false",
     "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
     "start": "npm run cp-deps && react-scripts start",
     "build": "npm run cp-deps && react-scripts build",
