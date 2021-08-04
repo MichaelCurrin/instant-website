@@ -62,14 +62,8 @@ class MainPage extends PureComponent {
   static defaultProps = MAIN_PAGE_DEFAULT_PROPS;
 
   render() {
-    const {
-      title,
-      subtitle,
-      description,
-      mainImage,
-      bgImage,
-      showForm,
-    } = this.props;
+    const { title, subtitle, description, mainImage, bgImage, showForm } =
+      this.props;
 
     // Double the resolution of the container, to prevent blurry images.
     const mainImageUrl = imageSearchUrl(
