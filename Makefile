@@ -26,13 +26,18 @@ check:
 fix:
 	npm run fmt:fix
 
+test:
+	npm run test:all
+
 
 s serve:
 	npm start
 
-
-build: fix test
+build:
 	npm run build
+
+
+deploy: install check build
 
 # Build, increment tag and push release.
 tag:
