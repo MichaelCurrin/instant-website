@@ -2,7 +2,8 @@
   "name": "instant-website",
   "version": "0.8.1",
   "scripts": {
-    "fmt": "npx prettier -w src",
+    "fmt:check": "npx prettier -c src",
+    "fmt:fix": "npx prettier -w src",
     "test": "react-scripts test --env=jsdom",
     "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
     "start": "npm run cp-deps && react-scripts start",
