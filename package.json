@@ -33,13 +33,6 @@
     "type": "git",
     "url": "https://github.com/MichaelCurrin/instant-website.git"
   },
-  "keywords": [
-    "react",
-    "react-url-query",
-    "unsplash",
-    "query-strings",
-    "instant"
-  ],
   "browserslist": {
     "production": [
       ">0.2%",
