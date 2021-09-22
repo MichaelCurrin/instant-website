@@ -2,8 +2,8 @@
   "name": "instant-website",
   "version": "0.8.1",
   "scripts": {
-    "fmt:check": "npx prettier -c src",
-    "fmt:fix": "npx prettier -w src",
+    "fmt:check": "prettier -c src",
+    "fmt:fix": "prettier -w src",
     "test": "react-scripts test --env=jsdom",
     "test:all": "react-scripts test --env=jsdom --watchAll=false",
     "cp-deps": "cp node_modules/bulma/css/*.css public/css/",
@@ -21,6 +21,7 @@
     "react-url-query": "^1.5.0"
   },
   "devDependencies": {
+    "prettier": "^2.4.1",
     "react-scripts": "^4.0.3"
   },
   "author": {
