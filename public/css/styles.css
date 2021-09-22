@@ -4,8 +4,9 @@
 }
 
 /*
- * Set background behind the background, so that it there is something there when the background URL loads.
- * Using cyan to darkblue also works, but greyish background is best for partial image rendering.
+ * Set background behind the background, so that it there is something there
+ * when the background URL loads. Using cyan to darkblue also works, but greyish
+ * background is best for partial image rendering.
  */
 html {
   background: linear-gradient(to bottom right, #222, #eee) center center;
@@ -17,7 +18,8 @@ html {
 }
 
 .modal-card {
-  /* Allow content to scroll inside the modal. From: https://github.com/jgthms/bulma/issues/2150 */
+  /* Allow content to scroll inside the modal. From:
+  https://github.com/jgthms/bulma/issues/2150 */
   overflow: auto;
   /* Stop the modal from obsuring the image on the side on a mobile. */
   max-width: 80%;
