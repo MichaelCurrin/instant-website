@@ -5,12 +5,12 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/instant-website.svg)](https://github.com/MichaelCurrin/instant-website/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Made with Node.js](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Made with Node.js](https://img.shields.io/badge/Node->=12-blue?logo=node.js&logoColor=white)](https://nodejs.org "Go to Node homepage")
 
-[![Package - react](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react?logo=react&logoColor=white)](https://www.npmjs.com/package/react)
-[![Package - react-url-query](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react-url-query?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query)
-[![Made with Bulma](https://img.shields.io/badge/Made_with-Bulma-blue.svg)](https://bulma.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/instant-website/badge.svg?targetFile=package.json)](https://snyk.io/test/github/MichaelCurrin/instant-website?targetFile=package.json)
+[![Package - react](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react?logo=react&logoColor=white)](https://www.npmjs.com/package/react "Go to react on NPM")
+[![Package - react-url-query](https://img.shields.io/github/package-json/dependency-version/MichaelCurrin/instant-website/react-url-query?logo=react&logoColor=white)](https://www.npmjs.com/package/react-url-query "Go to react-url-query on NPM")
+[![Made with Bulma](https://img.shields.io/badge/Made_with-Bulma-blue.svg)](https://bulma.io/ "Go to Bulma homepage")
+[![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/instant-website/badge.svg?targetFile=package.json)](https://snyk.io/test/github/MichaelCurrin/instant-website?targetFile=package.json "Go to Snyk page")
 
 
 Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding
@@ -19,7 +19,7 @@ Manifest a business idea as a simple webpage - using custom text and images supp
 
 <div align="center">
     <a href="https://instant-website.netlify.app/">
-        <img src=sample.png alt="Sample screenshot" title="Sample screenshot" width="500" />
+        <img src=sample.png alt="Sample screenshot" title="Go to website" width="500" />
     </a>
 </div>
 
