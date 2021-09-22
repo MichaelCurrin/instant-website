@@ -1,6 +1,6 @@
 default: install
 
-all: hooks install check build
+all: hooks deploy
 
 h help:
 	@grep '^[a-z]' Makefile
@@ -20,7 +20,7 @@ upgrade:
 	npm upgrade
 
 
-check:
+checks:
 	npm run fmt:check
 
 fix:
@@ -37,7 +37,7 @@ build:
 	npm run build
 
 
-deploy: install check build
+deploy: install checks build
 
 # Build, increment tag and push release.
 tag:
