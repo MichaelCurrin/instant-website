@@ -15,6 +15,8 @@
 
 Manifest a business idea as a simple webpage - using custom text and images supplied in a URL and no coding
 
+> Unsplash has changed their API and restricted it to require an account and limited free usage. This project is not being updated to handle the changes. See https://unsplash.com/documentation if you are interested.
+
 ## Preview
 
 <div align="center">
